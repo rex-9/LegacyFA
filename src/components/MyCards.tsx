@@ -16,7 +16,7 @@ const MyCards = () => {
             : "absolute -z-0 bottom-4 right-0 bg-gradient-to-br from-pink-400 via-red-400 to-red-600 text-white flex flex-col justify-between rounded-xl px-4 py-2 w-[85%] h-[80%]"
         }
       >
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <span>Balance</span>
           {card.type === "VISA" ? (
             <img
