@@ -18,24 +18,24 @@ const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
           />
           <div className="w-20">
             <p>{stock.initials.toUpperCase()}</p>
-            <p className="text-gray-300">{stock.name}</p>
+            <p className="text-gray-300 text-sm">{stock.name}</p>
           </div>
           {stock.increase ? (
-            <span className="text-green-600 text-sm flex-center gap-2 flex-grow !justify-start">
+            <span className="text-green-600 text-sm flex-center gap-1 flex-grow !justify-start">
               <TinyIcon icon={icons.increase} />
               <span>
                 +{parseFloat(((stock.amount / stock.price) * 100).toFixed(2))}%
               </span>
             </span>
           ) : (
-            <span className="text-red-600 text-sm flex-center gap-2 flex-grow !justify-start">
-              <TinyIcon icon={icons.decrease} />
+            <span className="text-red-600 text-sm flex-center gap-1 flex-grow !justify-start">
+              <TinyIcon icon={icons.increase} reverse={true} />
               <span>
                 -{parseFloat(((stock.amount / stock.price) * 100).toFixed(2))}%
               </span>
             </span>
           )}
-          <div>
+          <div className="w-24 text-right">
             <p>${stock.price}</p>
             {stock.increase ? (
               <p className="text-green-600">+${stock.amount}</p>

@@ -1,12 +1,24 @@
 import { IIcon } from "../interface";
 
-const TinyIcon = ({ icon }: { icon: IIcon }) => {
+const TinyIcon = ({
+  icon,
+  reverse = false,
+}: {
+  icon: IIcon;
+  reverse?: boolean;
+}) => {
   return (
-    <img
-      className="w-2 h-2 rounded-lg text-gray-300"
-      src={icon.icon}
-      alt={icon.label}
-    />
+    <>
+      {reverse ? (
+        <img
+          className="w-4 h-4 rounded-lg scale-y-[-1]"
+          src={icon.icon}
+          alt={icon.label}
+        />
+      ) : (
+        <img className="w-4 h-4 rounded-lg" src={icon.icon} alt={icon.label} />
+      )}
+    </>
   );
 };
 

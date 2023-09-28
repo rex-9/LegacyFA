@@ -22,7 +22,7 @@ const NetAnalysisCard = ({
         </span>
       ) : (
         <span className="text-red-600 text-sm flex-center gap-2">
-          <TinyIcon icon={icons.decrease} />
+          <TinyIcon icon={icons.increase} reverse={true} />
           <span>-{change}%</span>
         </span>
       )}

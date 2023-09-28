@@ -19,7 +19,6 @@ import transactions from "./transactions.svg";
 import wallet from "./wallet.svg";
 import mail from "./mail.svg";
 import increase from "./increase.svg";
-import decrease from "./decrease.svg";
 import rightArrow from "./rightArrow.svg";
 import plus from "./plus.svg";
 import apple from "./apple.svg";
@@ -50,7 +49,6 @@ const icons: { [key: string]: IIcon } = {
   transactions: { icon: transactions, label: "transactions" },
   wallet: { icon: wallet, label: "wallet" },
   increase: { icon: increase, label: "increase" },
-  decrease: { icon: decrease, label: "decrease" },
   rightArrow: { icon: rightArrow, label: "rightArrow" },
   plus: { icon: plus, label: "plus" },
   apple: { icon: apple, label: "apple" },
