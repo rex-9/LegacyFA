@@ -1,3 +1,8 @@
+export interface IIcon {
+  icon: string;
+  label: string;
+}
+
 export interface IExpense {
   field: string;
   amount: number;
@@ -12,7 +17,7 @@ export interface ITransaction {
 }
 
 export interface IStock {
-  icon: string;
+  icon: IIcon;
   initials: string;
   name: string;
   price: number;

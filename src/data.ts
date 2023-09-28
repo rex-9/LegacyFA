@@ -63,7 +63,7 @@ const transactions: ITransaction[] = [
 
 const stocks: IStock[] = [
   {
-    icon: icons.logo.icon,
+    icon: icons.apple,
     initials: "AAPL",
     name: "Apple Inc.",
     price: 3204.05,
@@ -71,7 +71,7 @@ const stocks: IStock[] = [
     increase: true,
   },
   {
-    icon: icons.logo.icon,
+    icon: icons.tesla,
     initials: "TSLA",
     name: "Tesla",
     price: 8547.82,
@@ -79,7 +79,7 @@ const stocks: IStock[] = [
     increase: false,
   },
   {
-    icon: icons.logo.icon,
+    icon: icons.netflix,
     initials: "NFLX",
     name: "Netflix",
     price: 1210,
@@ -87,7 +87,7 @@ const stocks: IStock[] = [
     increase: false,
   },
   {
-    icon: icons.logo.icon,
+    icon: icons.amazon,
     initials: "AMZN",
     name: "Amazon",
     price: 14367.75,

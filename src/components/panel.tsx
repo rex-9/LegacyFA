@@ -5,10 +5,10 @@ const Panel = () => {
   const PrefixIcon = ({ icon, size }: { icon: IIcon; size: string }) => {
     return (
       <img
-        className="rounded-lg"
+        className="object-cover"
         style={{ width: `${size}px`, height: `${size}px` }}
-        src={icon.icon}
-        alt={icon.label}
+        src={icon?.icon}
+        alt={icon?.label}
       />
     );
   };
@@ -50,44 +50,44 @@ const Panel = () => {
         <PrefixIcon icon={icons.logo} size={"48"} /> Wallet
       </div>
       <NavBtn
-        icon={icons.logo}
+        icon={icons.dashboard}
         label="Dashboard"
         onClick={() => navTo("Dashboard")}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.wallet}
         label="Wallet"
         onClick={() => navTo("Wallet")}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.transactions}
         label="Transactions"
         onClick={() => navTo("Transactions")}
         noti={1}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.database}
         label="Cashback"
         onClick={() => navTo("Cashback")}
         noti={4}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.dollar}
         label="Payment"
         onClick={() => navTo("Payment")}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.investment}
         label="Investment"
         onClick={() => navTo("Investment")}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.person}
         label="Profile"
         onClick={() => navTo("Profile")}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.chat}
         label="Support"
         onClick={() => navTo("Support")}
       />
@@ -95,12 +95,12 @@ const Panel = () => {
         <div className="w-2/3 border-[1px] h-[1px]" />
       </div>
       <NavBtn
-        icon={icons.logo}
+        icon={icons.setting}
         label="Settings"
         onClick={() => navTo("Settings")}
       />
       <NavBtn
-        icon={icons.logo}
+        icon={icons.logOut}
         label="Logout"
         onClick={() => navTo("Log out")}
       />

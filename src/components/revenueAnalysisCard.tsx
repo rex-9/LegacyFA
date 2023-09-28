@@ -17,12 +17,12 @@ const RevenueAnalysisCard = ({
           <span className="text-sm flex-center gap-2">
             <div className="rounded-full h-3 w-3" />
             {lastYear}
-            <TinyIcon icon={icons.lens} />
+            <TinyIcon icon={icons.downArrow} />
           </span>
           <span className="text-sm flex-center gap-2">
             <div className="rounded-full h-3 w-3" />
             {thisYear}
-            <TinyIcon icon={icons.lens} />
+            <TinyIcon icon={icons.downArrow} />
           </span>
         </div>
       </div>

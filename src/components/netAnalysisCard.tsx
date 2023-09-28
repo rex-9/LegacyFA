@@ -13,16 +13,16 @@ const NetAnalysisCard = ({
 }) => {
   return (
     <article className="relative bg-white w-1/3 h-48 p-0 px-4 rounded-lg flex-center flex-col !items-start !justify-around">
-      <Heading header={label} action={"this month"} icon={icons.lens} />
+      <Heading header={label} action={"this month"} icon={icons.downArrow} />
       <p className="text-3xl font-bold">${net}</p>
       {increase ? (
         <span className="text-green-600 text-sm flex-center gap-2">
-          <TinyIcon icon={icons.lens} />
+          <TinyIcon icon={icons.increase} />
           <span>+{change}%</span>
         </span>
       ) : (
         <span className="text-red-600 text-sm flex-center gap-2">
-          <TinyIcon icon={icons.lens} />
+          <TinyIcon icon={icons.decrease} />
           <span>-{change}%</span>
         </span>
       )}

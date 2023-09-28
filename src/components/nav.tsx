@@ -42,9 +42,9 @@ const nav = () => {
             <Icon icon={icons.mail} />
           </button>
           <button className="relative hover:bg-gray-200 rounded-lg p-2">
-            <Icon icon={icons.lens} />
+            <Icon icon={icons.bell} />
             <span className="sr-only">Notifications</span>
-            <div className="noti-badge -top-3 -right-2">5</div>
+            <div className="noti-badge -top-1 -right-1">5</div>
           </button>
         </div>
       </div>
