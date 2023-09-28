@@ -1,4 +1,6 @@
 import logo from "./logo.png";
+import lens from "./lens.svg";
+import mail from "./mail.svg";
 
 export interface IIcon {
   icon: string;
@@ -7,6 +9,8 @@ export interface IIcon {
 
 const icons: { [key: string]: IIcon } = {
   logo: { icon: logo, label: "logo" },
+  lens: { icon: lens, label: "lens" },
+  mail: { icon: mail, label: "mail" },
 };
 
 const images = {
