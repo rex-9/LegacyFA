@@ -1,4 +1,5 @@
-import { IIcon } from "../assets/index";
+import { IIcon } from "../interface";
+
 const TinyIcon = ({ icon }: { icon: IIcon }) => {
   return (
     <img

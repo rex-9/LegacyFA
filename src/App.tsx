@@ -1,5 +1,5 @@
-import Home from "./pages/home";
-import Panel from "./components/panel";
+import Home from "./pages/Home";
+import Panel from "./components/Panel";
 
 function App() {
   return (
