@@ -8,7 +8,7 @@ const RevenueAnalysisCard = ({
   thisYear: number;
 }) => {
   return (
-    <article className="relative h-72 w-2/3 p-4 rounded-lg">
+    <article className="relative bg-white h-72 w-2/3 p-4 rounded-lg">
       <div className="flex-center w-full !justify-between mb-4">
         <span className="text-2xl font-quicksand font-bold">
           Revenue Analysis

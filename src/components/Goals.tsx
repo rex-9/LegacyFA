@@ -5,10 +5,10 @@ import { IGoal } from "../interface";
 
 const Goals = () => {
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg">
+    <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
       <Heading header={"Goals"} action={"add goal"} icon={icons.lens} />
       {goals.map((goal: IGoal) => (
-        <button className="flex-center !justify-around gap-4 w-full my-3 pt-3">
+        <div className="flex-center !justify-around gap-4 w-full my-3 pt-3">
           {goal.name === "Trip" && (
             <img
               className="w-6 h-6"
@@ -44,8 +44,12 @@ const Goals = () => {
               alt={icons.lens.label}
             />
           </div>
-        </button>
+        </div>
       ))}
+      <div className="flex-center gap-4">
+        <button className="bg-purple-600 rounded-full w-2 h-2" />
+        <button className="bg-purple-300 rounded-full w-2 h-2" />
+      </div>
     </article>
   );
 };

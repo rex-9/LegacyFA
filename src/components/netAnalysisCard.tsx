@@ -12,7 +12,7 @@ const NetAnalysisCard = ({
   increase: boolean;
 }) => {
   return (
-    <article className="relative w-1/3 h-48 p-0 px-4 rounded-lg flex-center flex-col !items-start !justify-around">
+    <article className="relative bg-white w-1/3 h-48 p-0 px-4 rounded-lg flex-center flex-col !items-start !justify-around">
       <Heading header={label} action={"this month"} icon={icons.lens} />
       <p className="text-3xl font-bold">${net}</p>
       {increase ? (

@@ -4,9 +4,9 @@ import { IExpense } from "../interface";
 
 const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
   return (
-    <div className="w-2/5 h-72 p-4 rounded-lg">
+    <div className="w-2/5 h-80 p-4 rounded-lg bg-white">
       <Heading header={"Expenses"} action={"last week"} icon={icons.lens} />
-      <div className="flex-center !justify-around my-3">
+      <div className="flex-center !justify-around my-4">
         <img
           // className="absolute bottom-0 right-0"
           src={icons.logo.icon}
@@ -25,7 +25,9 @@ const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
           ))}
         </div>
       </div>
-      <span>You have spent 16% less money this week than last week.</span>
+      <div className="mt-8">
+        You have spent 16% less money this week than last week.
+      </div>
     </div>
   );
 };

@@ -5,7 +5,6 @@ const Panel = () => {
   const PrefixIcon = ({ icon, size }: { icon: IIcon; size: string }) => {
     return (
       <img
-        // className={`w-${size} h-${size} rounded-lg`}
         className="rounded-lg"
         style={{ width: `${size}px`, height: `${size}px` }}
         src={icon.icon}
@@ -18,15 +17,26 @@ const Panel = () => {
     icon,
     label,
     onClick,
+    noti = 0,
   }: {
     icon: IIcon;
     label: string;
     onClick: () => void;
+    noti?: number;
   }) => {
     return (
-      <button className="p-2 w-full flex-center my-2" onClick={onClick}>
+      <button
+        className="p-2 w-full hover:bg-gray-200 flex-center my-2 relative"
+        onClick={onClick}
+      >
         <span className="flex justify-start px-4 gap-4 w-2/3 text-lg">
           <PrefixIcon icon={icon} size={"24"} /> {label}
+          {noti > 0 && (
+            <>
+              <span className="sr-only">Notifications</span>
+              <div className="noti-badge right-8 top-3">{noti}</div>
+            </>
+          )}
         </span>
       </button>
     );
@@ -53,11 +63,13 @@ const Panel = () => {
         icon={icons.logo}
         label="Transactions"
         onClick={() => navTo("Transactions")}
+        noti={1}
       />
       <NavBtn
         icon={icons.logo}
         label="Cashback"
         onClick={() => navTo("Cashback")}
+        noti={4}
       />
       <NavBtn
         icon={icons.logo}

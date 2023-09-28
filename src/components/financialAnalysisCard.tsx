@@ -2,7 +2,7 @@ import { icons } from "../assets";
 import { Heading, TinyIcon } from "../helpers";
 const FinancialAnalysisCard = () => {
   return (
-    <article className="relative h-72 w-1/3 p-4 rounded-lg">
+    <article className="relative bg-white h-72 w-1/3 p-4 rounded-lg">
       <Heading
         header={"Financial Analysis"}
         action={"this month"}

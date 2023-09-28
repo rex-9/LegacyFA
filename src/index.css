@@ -9,4 +9,8 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+
+  .noti-badge {
+    @apply absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-purple-500 border-2 border-white rounded-full;
+  }
 }

@@ -21,10 +21,10 @@ const Heading = ({
   return (
     <div className="flex-center w-full !justify-between">
       <span className="text-2xl font-quicksand font-bold">{header}</span>
-      <span className="text-sm flex-center gap-2 text-gray-300">
+      <button className="text-sm flex-center gap-2 text-gray-300 hover:text-black">
         {action}
         <TinyIcon icon={icon} />
-      </span>
+      </button>
     </div>
   );
 };

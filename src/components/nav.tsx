@@ -38,13 +38,13 @@ const nav = () => {
             alt={icons.logo.icon}
           />
           <span className="text-base flex-grow">Hello Username!</span>
-          <Icon icon={icons.mail} />
-          <button className="relative">
+          <button className="hover:bg-gray-200 rounded-lg p-2">
+            <Icon icon={icons.mail} />
+          </button>
+          <button className="relative hover:bg-gray-200 rounded-lg p-2">
             <Icon icon={icons.lens} />
             <span className="sr-only">Notifications</span>
-            <div className="absolute -top-3 -right-2 inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-purple-500 border-2 border-white rounded-full">
-              5
-            </div>
+            <div className="noti-badge -top-3 -right-2">5</div>
           </button>
         </div>
       </div>

@@ -12,10 +12,10 @@ import MyCards from "../components/myCards";
 
 const Home = () => {
   return (
-    <div className="w-[85%]">
+    <div className="w-[85%] bg-gray-200">
       <Nav />
       <section className="flex-center !items-start h-full">
-        <div className="w-3/4 h-full flex flex-col justify-between pl-4 pb-32 pt-4">
+        <div className="w-3/4 h-full flex flex-col justify-between pl-4 pb-28 pt-4">
           <div className="flex-center mx-4 gap-4">
             <NetAnalysisCard
               label="Income"
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/4 flex flex-col justify-start items-start gap-4 h-full pb-32 pt-4">
+        <div className="w-1/4 flex flex-col justify-start items-start gap-4 h-full pb-28 pt-4">
           <MyCards />
           <QuickTransfers />
           <Goals />

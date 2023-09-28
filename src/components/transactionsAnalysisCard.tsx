@@ -8,11 +8,11 @@ const TransactionsAnalysisCard = ({
   transactions: ITransaction[];
 }) => {
   return (
-    <div className="w-1/2 h-72 p-4 rounded-lg">
+    <div className="w-1/2 h-80 p-4 rounded-lg bg-white">
       <Heading header={"Transactions"} action={"today"} icon={icons.lens} />
       {transactions.map((transaction: ITransaction, index: number) => (
         <div
-          className="flex-center !justify-between gap-4 py-1"
+          className="flex-center !justify-between gap-4 py-1 my-1"
           style={{ borderTop: index !== 0 ? "1px solid black" : "" }}
         >
           <img
@@ -34,6 +34,10 @@ const TransactionsAnalysisCard = ({
           </div>
         </div>
       ))}
+      <div className="flex-center gap-4">
+        <button className="bg-purple-600 rounded-full w-2 h-2" />
+        <button className="bg-purple-300 rounded-full w-2 h-2" />
+      </div>
     </div>
   );
 };

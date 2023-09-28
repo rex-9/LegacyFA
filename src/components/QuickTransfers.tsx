@@ -5,11 +5,12 @@ import { ITransfer } from "../interface";
 
 const QuickTransfers = () => {
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg">
+    <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
       <Heading header={"Quick Transfers"} action={"add"} icon={icons.lens} />
+      <div className="h-3" />
       {transfers.map((transfer: ITransfer, index: number) => (
         <button
-          className="flex-center !justify-around gap-4 w-full my-3 pt-3"
+          className="flex-center hover:bg-gray-200 !justify-around gap-4 w-full p-3"
           style={{ borderTop: index !== 0 ? "1px solid gray" : "" }}
         >
           <span className="bg-white rounded-full px-4 py-2 w-10">
