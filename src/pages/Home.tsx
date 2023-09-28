@@ -1,14 +1,14 @@
-import Nav from "../components/nav";
-import NetAnalysisCard from "../components/netAnalysisCard";
-import RevenueAnalysisCard from "../components/revenueAnalysisCard";
-import FinancialAnalysisCard from "../components/financialAnalysisCard";
-import ExpensesAnalysisCard from "../components/expensesAnalysisCard";
+import Nav from "../components/Nav";
+import NetAnalysisCard from "../components/NetAnalysisCard";
+import RevenueAnalysisCard from "../components/RevenueAnalysisCard";
+import FinancialAnalysisCard from "../components/FinancialAnalysisCard";
+import ExpensesAnalysisCard from "../components/ExpensesAnalysisCard";
 import InvestmentAnalysisCard from "../components/InvestmentAnalysisCard";
-import TransactionsAnalysisCard from "../components/transactionsAnalysisCard";
+import TransactionsAnalysisCard from "../components/TransactionsAnalysisCard";
 import { expenses, stocks, transactions } from "../data";
 import QuickTransfers from "../components/QuickTransfers";
 import Goals from "../components/Goals";
-import MyCards from "../components/myCards";
+import MyCards from "../components/MyCards";
 
 const Home = () => {
   return (
