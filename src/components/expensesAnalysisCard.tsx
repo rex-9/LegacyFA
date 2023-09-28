@@ -18,14 +18,17 @@ const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
         />
         <div>
           {expenses.map((expense: IExpense) => (
-            <p className="flex-center !justify-between gap-4">
+            <div
+              key={expense.amount}
+              className="flex-center !justify-between gap-4"
+            >
               <div
                 className={`rounded-full h-3 w-3`}
                 style={{ backgroundColor: expense.color }}
               />
               <span className="flex-grow">{expense.field}</span>
               <span>${expense.amount}</span>
-            </p>
+            </div>
           ))}
         </div>
       </div>

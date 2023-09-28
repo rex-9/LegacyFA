@@ -16,6 +16,7 @@ const TransactionsAnalysisCard = ({
       />
       {transactions.map((transaction: ITransaction, index: number) => (
         <div
+          key={transaction.endUser}
           className="flex-center !justify-between gap-4 py-1 my-1"
           style={{ borderTop: index !== 0 ? "1px solid black" : "" }}
         >

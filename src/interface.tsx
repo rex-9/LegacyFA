@@ -32,6 +32,14 @@ export interface IStock {
   increase: boolean;
 }
 
+export interface ICard {
+  name: string;
+  account: number;
+  expireDate: string;
+  balance: number;
+  type: string;
+}
+
 export interface ITransfer {
   name: string;
   account: number;

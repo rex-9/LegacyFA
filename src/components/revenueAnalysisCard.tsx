@@ -13,13 +13,13 @@ const RevenueAnalysisCard = ({
         <span className="text-2xl font-quicksand font-bold">
           Revenue Analysis
         </span>
-        <div className="flex-center gap-4">
-          <span className="text-sm flex-center gap-2">
+        <div className="flex-center gap-4 text-gray-300">
+          <span className="text-sm flex-center gap-2 hover:text-black">
             <div className="rounded-full h-3 w-3" />
             {lastYear}
             <TinyIcon icon={icons.downArrow} />
           </span>
-          <span className="text-sm flex-center gap-2">
+          <span className="text-sm flex-center gap-2 hover:text-black">
             <div className="rounded-full h-3 w-3" />
             {thisYear}
             <TinyIcon icon={icons.downArrow} />

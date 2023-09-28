@@ -19,12 +19,14 @@ const Home = () => {
         <div className="w-3/4 h-full flex flex-col justify-between pl-4 pb-28 pt-4">
           <div className="flex-center mx-4 gap-4">
             {nets.map((net: INet) => (
-              <NetAnalysisCard
-                label={net.label}
-                amount={net.amount}
-                percentage={net.percentage}
-                increase={net.increase}
-              />
+              <div key={net.label} className="w-1/3">
+                <NetAnalysisCard
+                  label={net.label}
+                  amount={net.amount}
+                  percentage={net.percentage}
+                  increase={net.increase}
+                />
+              </div>
             ))}
           </div>
           <div className="flex-center mx-4 gap-4">

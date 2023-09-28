@@ -1,5 +1,5 @@
 import { icons } from "./assets";
-import { IExpense, IGoal, INet, IStock, ITransaction, ITransfer } from "./interface";
+import { ICard, IExpense, IGoal, INet, IStock, ITransaction, ITransfer } from "./interface";
 
 const currentUser = {
   name: "Michaela",
@@ -34,27 +34,27 @@ const expenses: IExpense[] = [
   },
   {
     field: "Transfers",
-    amount: 186.65,
+    amount: 207.82,
     color: "#fff",
   },
   {
     field: "Restaurants",
-    amount: 186.65,
+    amount: 197.25,
     color: "#fff",
   },
   {
     field: "Cash",
-    amount: 186.65,
+    amount: 340,
     color: "#fff",
   },
   {
     field: "Study",
-    amount: 186.65,
+    amount: 500.85,
     color: "#fff",
   },
   {
     field: "Others",
-    amount: 186.65,
+    amount: 93.04,
     color: "#fff",
   },
 ];
@@ -121,18 +121,35 @@ const stocks: IStock[] = [
   },
 ];
 
+const cards: ICard[] = [
+  {
+    name: "Michaela Evans",
+    account: 4654536740550556,
+    expireDate: "05/24",
+    balance: 5089.56,
+    type: 'VISA',
+  },
+  {
+    name: "Michaela Evans",
+    account: 4654536740550556,
+    expireDate: "09/25",
+    balance: 5089.56,
+    type: 'Master',
+  },
+];
+
 const transfers: ITransfer[] = [
   {
     name: "Alexander Abramson",
-    account: 3827483940593827,
+    account: 3827483940591676,
   },
   {
     name: "Juila Davidson",
-    account: 3827483940593827,
+    account: 3827483940592676,
   },
   {
     name: "Andrew Evens",
-    account: 3827483940593827,
+    account: 3827483940590987,
   },
 ];
 
@@ -154,4 +171,4 @@ const goals: IGoal[] = [
   },
 ];
 
-export { currentUser, nets, expenses, transactions, stocks, transfers, goals };
+export { currentUser, nets, expenses, transactions, stocks, cards, transfers, goals };

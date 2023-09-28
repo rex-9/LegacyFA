@@ -8,6 +8,7 @@ const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
       <Heading header={"Investment"} action={"today"} icon={icons.downArrow} />
       {stocks.map((stock: IStock, index: number) => (
         <div
+          key={stock.initials}
           className="flex-center !justify-between gap-4 py-1 my-1"
           style={{ borderTop: index !== 0 ? "1px solid black" : "" }}
         >

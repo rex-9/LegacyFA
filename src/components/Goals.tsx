@@ -8,7 +8,10 @@ const Goals = () => {
     <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
       <Heading header={"Goals"} action={"add goal"} icon={icons.downArrow} />
       {goals.map((goal: IGoal) => (
-        <div className="flex-center !justify-around gap-4 w-full my-3 pt-3">
+        <div
+          key={goal.name}
+          className="flex-center !justify-around gap-4 w-full my-3 pt-3"
+        >
           {goal.name === "Trip" && (
             <img
               className="w-10 h-10 rounded-full bg-gray-200 p-2"

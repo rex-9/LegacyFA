@@ -1,4 +1,6 @@
 import logo from "./logo.png";
+import visa from "./visa.svg";
+import master from "./master.png";
 import girl from "./girl.jpg";
 import lens from "./lens.svg";
 import bag from "./bag.svg";
@@ -26,6 +28,7 @@ import apple from "./apple.svg";
 import tesla from "./tesla.svg";
 import amazon from "./amazon.svg";
 import netflix from "./netflix.svg";
+import sim from "./sim.svg";
 import { IIcon } from "../interface";
 
 const icons: { [key: string]: IIcon } = {
@@ -56,11 +59,14 @@ const icons: { [key: string]: IIcon } = {
   amazon: { icon: amazon, label: "amazon" },
   tesla: { icon: tesla, label: "tesla" },
   netflix: { icon: netflix, label: "netflix" },
+  sim: { icon: sim, label: "sim" },
 };
 
 const images = {
   logo: { icon: logo, label: "logo" },
   girl: { icon: girl, label: "girl" },
+  visa: { icon: visa, label: "visa" },
+  master: { icon: master, label: "master" },
 };
 
 export { icons, images };

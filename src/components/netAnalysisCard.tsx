@@ -13,7 +13,7 @@ const NetAnalysisCard = ({
 }) => {
   const [integerPart, decimalPart] = amount.toString().split(".");
   return (
-    <article className="relative bg-white w-1/3 h-48 p-0 px-4 rounded-lg flex-center flex-col !items-start !justify-around">
+    <article className="relative bg-white h-48 p-0 px-4 rounded-lg flex-center flex-col !items-start !justify-around">
       <Heading header={label} action={"this month"} icon={icons.downArrow} />
       <p className="text-3xl font-bold">
         <span>${integerPart}</span>
