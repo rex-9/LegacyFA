@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "qs": "Quicksand"
+        mooli: ["Mooli", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"]
       }
     },
   },
