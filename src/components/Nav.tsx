@@ -1,4 +1,5 @@
-import { icons } from "../assets";
+import { icons, images } from "../assets";
+import { currentUser } from "../data";
 import { IIcon } from "../interface";
 
 const nav = () => {
@@ -34,10 +35,10 @@ const nav = () => {
         <div className="flex-center h-12 w-[18vw] gap-4 !justify-around bg-white rounded-lg pr-4">
           <img
             className="w-20 h-20 rounded-lg"
-            src={icons.logo.icon}
-            alt={icons.logo.icon}
+            src={images.girl.icon}
+            alt={images.girl.label}
           />
-          <span className="text-base flex-grow">Hello Username!</span>
+          <span className="text-base flex-grow">Hello {currentUser.name}!</span>
           <button className="hover:bg-gray-200 rounded-lg p-2">
             <Icon icon={icons.mail} />
           </button>

@@ -1,5 +1,30 @@
 import { icons } from "./assets";
-import { IExpense, IGoal, IStock, ITransaction, ITransfer } from "./interface";
+import { IExpense, IGoal, INet, IStock, ITransaction, ITransfer } from "./interface";
+
+const currentUser = {
+  name: "Michaela",
+}
+
+const nets: INet[] = [
+  {
+    label: "Income",
+    amount: 6558.67,
+    percentage: 16,
+    increase: true,
+  },
+  {
+    label: "Expenses",
+    amount: 1420.05,
+    percentage: 36,
+    increase: false,
+  },
+  {
+    label: "Investment",
+    amount: 950.35,
+    percentage: 12,
+    increase: true,
+  },
+];
 
 const expenses: IExpense[] = [
   {
@@ -129,4 +154,4 @@ const goals: IGoal[] = [
   },
 ];
 
-export { expenses, transactions, stocks, transfers, goals };
+export { currentUser, nets, expenses, transactions, stocks, transfers, goals };

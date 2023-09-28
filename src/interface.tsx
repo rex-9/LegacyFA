@@ -3,6 +3,13 @@ export interface IIcon {
   label: string;
 }
 
+export interface INet {
+  label: string;
+  amount: number;
+  percentage: number;
+  increase: boolean;
+}
+
 export interface IExpense {
   field: string;
   amount: number;

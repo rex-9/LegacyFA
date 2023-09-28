@@ -5,10 +5,11 @@ import FinancialAnalysisCard from "../components/FinancialAnalysisCard";
 import ExpensesAnalysisCard from "../components/ExpensesAnalysisCard";
 import InvestmentAnalysisCard from "../components/InvestmentAnalysisCard";
 import TransactionsAnalysisCard from "../components/TransactionsAnalysisCard";
-import { expenses, stocks, transactions } from "../data";
+import { expenses, nets, stocks, transactions } from "../data";
 import QuickTransfers from "../components/QuickTransfers";
 import Goals from "../components/Goals";
 import MyCards from "../components/MyCards";
+import { INet } from "../interface";
 
 const Home = () => {
   return (
@@ -17,24 +18,14 @@ const Home = () => {
       <section className="flex-center !items-start h-full">
         <div className="w-3/4 h-full flex flex-col justify-between pl-4 pb-28 pt-4">
           <div className="flex-center mx-4 gap-4">
-            <NetAnalysisCard
-              label="Income"
-              net={1230.44}
-              change={10}
-              increase={true}
-            />
-            <NetAnalysisCard
-              label="Expenses"
-              net={3022.44}
-              change={5}
-              increase={false}
-            />
-            <NetAnalysisCard
-              label="Investment"
-              net={2000.44}
-              change={5}
-              increase={true}
-            />
+            {nets.map((net: INet) => (
+              <NetAnalysisCard
+                label={net.label}
+                amount={net.amount}
+                percentage={net.percentage}
+                increase={net.increase}
+              />
+            ))}
           </div>
           <div className="flex-center mx-4 gap-4">
             <RevenueAnalysisCard lastYear={2021} thisYear={2022} />

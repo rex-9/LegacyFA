@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import girl from "./girl.jpg";
 import lens from "./lens.svg";
 import bag from "./bag.svg";
 import bell from "./bell.svg";
@@ -59,6 +60,7 @@ const icons: { [key: string]: IIcon } = {
 
 const images = {
   logo: { icon: logo, label: "logo" },
+  girl: { icon: girl, label: "girl" },
 };
 
 export { icons, images };

@@ -38,11 +38,14 @@ const Goals = () => {
                 <span className="text-gray-400">${goal.total}</span>
               </div>
             </div>
-            <img
-              className="w-4 h-4"
-              src={icons.lens.icon}
-              alt={icons.lens.label}
-            />
+            <div className="w-full bg-gray-200 rounded-full h-2.5">
+              <div
+                className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600 h-full rounded-full"
+                style={{
+                  width: `calc((${goal.current} / ${goal.total}) * 100%)`,
+                }}
+              />
+            </div>
           </div>
         </div>
       ))}
