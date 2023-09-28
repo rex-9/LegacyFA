@@ -4,7 +4,7 @@ import Panel from "./components/panel";
 function App() {
   return (
     <>
-      <section className="flex justify-center h-screen font-mooli">
+      <section className="flex justify-center h-screen overflow-y-hidden overflow-x-hidden font-mooli">
         <Panel />
         <Home />
       </section>
