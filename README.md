@@ -37,6 +37,7 @@ For more information on the importance of a professional README for your reposit
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [Screenshots](#screenshots)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -62,7 +63,17 @@ For more information on the importance of a professional README for your reposit
 
 > Describe your project in 1 or 2 sentences.
 
-**[legacy-fa-dashboard]** is an assignment given to me by LegacyFA to display my frontend skills.
+**legacy-fa-dashboard** is an assignment given to me by LegacyFA to display my frontend skills.
+
+## [Pull Request](https://github.com/rex-9/LegacyFA/pull/1)
+
+## Screenshots <a name="screenshots"></a>
+
+- Dark Theme
+  ![Dark Theme](./src/assets/images/dark.png)
+
+- Light Theme
+  ![Light Theme](./src/assets/images/light.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
