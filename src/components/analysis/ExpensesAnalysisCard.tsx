@@ -9,7 +9,7 @@ import { useContext } from "react";
 const ExpensesAnalysisCard = () => {
   const theme = useContext(ThemeContext);
   return (
-    <article className="expenses-card w-2/5 h-80 p-4 rounded-lg dark-white">
+    <article className="expenses-card w-2/5 h-80 p-4 rounded-lg dark-card">
       <Heading
         header={"Expenses"}
         action={"last week"}

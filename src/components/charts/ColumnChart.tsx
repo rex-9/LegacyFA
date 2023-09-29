@@ -63,6 +63,7 @@ const ColumnChart = ({
         show: true,
         style: {
           fontFamily: "Inter, sans-serif",
+          colors: ["gray", "gray", "gray", "gray", "gray", "gray", "gray"],
           cssClass: "text-xs font-normal fill-gray-500 dark:fill-gray-400",
         },
       },
@@ -77,7 +78,7 @@ const ColumnChart = ({
       show: true,
       labels: {
         style: {
-          colors: ["gray"],
+          colors: ["gray", "gray", "gray", "gray", "gray", "gray", "gray"],
           fontSize: "12px",
           fontFamily: "Mooli, Arial, sans-serif",
           fontWeight: 400,
@@ -121,6 +122,12 @@ const ColumnChart = ({
               fontWeight: 600,
               fontFamily: "Mooli, Arial, sans-serif",
               cssClass: "apexcharts-point-annotation-label",
+              padding: {
+                left: 5,
+                right: 5,
+                top: 0,
+                bottom: 2,
+              },
             },
           },
         },
@@ -148,6 +155,12 @@ const ColumnChart = ({
               fontWeight: 600,
               fontFamily: "Mooli, Arial, sans-serif",
               cssClass: "apexcharts-point-annotation-label",
+              padding: {
+                left: 5,
+                right: 5,
+                top: 0,
+                bottom: 2,
+              },
             },
           },
         },

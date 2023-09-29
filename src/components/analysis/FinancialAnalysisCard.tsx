@@ -7,7 +7,7 @@ import { ThemeContext } from "../../App";
 const FinancialAnalysisCard = () => {
   const theme = useContext(ThemeContext);
   return (
-    <article className="relative dark-white h-72 w-1/3 p-4 rounded-lg">
+    <article className="relative dark-card h-72 w-1/3 p-4 rounded-lg">
       <Heading
         header={"Financial Analysis"}
         action={"this month"}

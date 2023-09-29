@@ -36,10 +36,10 @@ const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
   }) => {
     return (
       <button
-        className="p-2 w-full hover:bg-gray-200 dark:hover:bg-opacity-25 flex-center my-2 relative"
+        className="p-2 w-full hover:bg-gray-200 dark:hover:bg-opacity-25 dark:hover:bg-gradient-to-tr dark:hover:from-[#3C4879] dark:hover:to-[#724DAD] flex-center my-2 relative"
         onClick={onClick}
       >
-        <span className="flex justify-start px-4 gap-4 w-2/3 text-lg">
+        <span className="flex justify-start px-4 gap-4 w-2/3 text-base">
           <PrefixIcon icon={icon} size={"24"} /> {label}
           {noti > 0 && (
             <>
@@ -57,7 +57,7 @@ const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
   };
 
   return (
-    <div className="w-[15%] text-center h-full relative dark-white">
+    <div className="w-[15%] text-center h-full relative dark-panel">
       <div className="text-2xl font-bold flex-center gap-4 py-6 font-quicksand dark-text-white">
         <PrefixIcon icon={icons.logo} size={"48"} /> Wallet
       </div>
@@ -117,14 +117,15 @@ const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
         onClick={() => navTo("Log out")}
       />
       <div className="absolute bottom-[5%] left-[20%]">
-        <label className="relative inline-flex items-center mb-5 cursor-pointer">
+        <label className="relative inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
-            value=""
+            value={theme}
             onChange={handleThemeSwitch}
+            checked={theme === "dark"}
             className="sr-only peer"
           />
-          <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600" />
+          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
           <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
             Switch to {theme !== "light" ? "Light" : "Dark"}
           </span>

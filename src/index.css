@@ -14,19 +14,44 @@
     @apply absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-purple-500 border-2 border-white rounded-full;
   }
 
-  .dark-white {
+  .dark-panel {
     @apply bg-white dark:bg-[#2C2351] text-[#2C2351] dark:text-gray-50;
   }
 
   .dark-gray {
     @apply bg-gray-200 dark:bg-[#392C6B] text-[#2C2351] dark:text-gray-50;
   }
+
+  .dark-card {
+    @apply bg-white dark:bg-[#56469E] text-[#2C2351] dark:text-gray-50;
+  }
+
+  .apexcharts-legend-text {
+    @apply !text-[#2C2351] !dark:text-gray-500;
+  }
 }
 
 /* Override the Built In Style of the Apex Chart */
 .expenses-card .apexcharts-legend {
   padding: 0;
-  right: 50px !important;
-  top: 30px !important;
+  right: 30px !important;
+  top: 40px !important;
   height: fit-content;
+  color: white !important;
+}
+
+.apexcharts-tooltip {
+  color: #000;
+}
+
+#SvgjsTspan9152 {
+  color: white !important;
+}
+
+.apexcharts-legend-text {
+  color: black !important;
+}
+
+.dark .apexcharts-legend-text {
+  color: white !important;
 }

@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import Chart from "react-apexcharts";
+import { ThemeContext } from "../../App";
 
 const AreaChart = ({ label }: { label: string }) => {
+  const theme = useContext(ThemeContext);
+
   const options = {
     chart: {
       id: "area-chart",
@@ -26,16 +30,15 @@ const AreaChart = ({ label }: { label: string }) => {
         colorStops: [
           {
             offset: 0,
-            color: "blue",
+            color: theme === "light" ? "blue" : "lightblue",
             opacity: 0.5,
           },
           {
             offset: 100,
-            color: "purple",
+            color: theme === "light" ? "purple" : "pink",
             opacity: 0.3,
           },
         ],
-        gradientToColors: ["blue", "purple"],
       },
     },
     dataLabels: {

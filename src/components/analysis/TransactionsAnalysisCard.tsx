@@ -11,7 +11,7 @@ const TransactionsAnalysisCard = ({
 }) => {
   const theme = useContext(ThemeContext);
   return (
-    <div className="w-1/2 h-80 p-4 rounded-lg dark-white">
+    <div className="w-1/2 h-80 p-4 rounded-lg dark-card">
       <Heading
         header={"Transactions"}
         action={"today"}
@@ -21,7 +21,7 @@ const TransactionsAnalysisCard = ({
         <div
           key={transaction.endUser}
           className="flex-center !justify-between gap-4 py-1 my-1"
-          style={{ borderTop: index !== 0 ? "1px solid black" : "" }}
+          style={{ borderTop: index !== 0 ? "1px solid gray" : "" }}
         >
           {transaction.type === "Transfers" && (
             <img

@@ -36,7 +36,7 @@ const nav = () => {
             </button>
           </div>
         </form>
-        <div className="flex-center h-12 w-[18vw] gap-4 !justify-around dark-white rounded-lg pr-4">
+        <div className="flex-center h-10 w-[18vw] gap-4 !justify-around dark-card rounded-lg pr-4">
           <img
             className="w-20 h-20 rounded-lg"
             src={images.girl.icon}

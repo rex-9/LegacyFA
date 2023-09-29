@@ -8,7 +8,7 @@ import { ThemeContext } from "../App";
 const Goals = () => {
   const theme = useContext(ThemeContext);
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg dark-white">
+    <article className="h-1/3 w-[90%] p-4 rounded-lg dark-card">
       <Heading
         header={"Goals"}
         action={"add goal"}

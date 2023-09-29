@@ -1,7 +1,10 @@
 import { ApexOptions } from "apexcharts";
 import Chart from "react-apexcharts";
+import { useContext } from "react";
+import { ThemeContext } from "../../App";
 
 const DonutChart = () => {
+  const theme = useContext(ThemeContext);
   const options: ApexOptions = {
     chart: {
       type: "donut",
@@ -25,6 +28,7 @@ const DonutChart = () => {
             total: {
               show: true,
               label: "Total",
+              color: theme === "light" ? "#000" : "#fff",
               formatter: function (w) {
                 const total = w.globals.seriesTotals
                   .reduce((a: number, b: number) => {
@@ -35,6 +39,7 @@ const DonutChart = () => {
               },
             },
             value: {
+              color: theme === "light" ? "#000" : "#fff",
               formatter: function (val) {
                 return `$${val}`;
               },
@@ -51,7 +56,7 @@ const DonutChart = () => {
   const series = [186.65, 207.82, 197.25, 340, 500.85, 93.04];
 
   return (
-    <div className="w-[85%]">
+    <div className="w-[83%]">
       <Chart options={options} series={series} type="donut" />
     </div>
   );
