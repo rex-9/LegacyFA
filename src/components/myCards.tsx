@@ -66,7 +66,7 @@ const MyCards = () => {
   };
 
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
+    <article className="h-1/3 w-[90%] p-4 rounded-lg dark-white">
       <Heading
         header={"My Cards"}
         action={"add card"}

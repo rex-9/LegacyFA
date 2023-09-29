@@ -36,17 +36,17 @@ const nav = () => {
             </button>
           </div>
         </form>
-        <div className="flex-center h-12 w-[18vw] gap-4 !justify-around bg-white rounded-lg pr-4">
+        <div className="flex-center h-12 w-[18vw] gap-4 !justify-around dark-white rounded-lg pr-4">
           <img
             className="w-20 h-20 rounded-lg"
             src={images.girl.icon}
             alt={images.girl.label}
           />
           <span className="text-base flex-grow">Hello {currentUser.name}!</span>
-          <button className="hover:bg-gray-200 rounded-lg p-2">
+          <button className="hover:bg-gray-200 hover:bg-opacity-25 rounded-lg p-2">
             <Icon icon={theme === "light" ? icons.mailB : icons.mailW} />
           </button>
-          <button className="relative hover:bg-gray-200 rounded-lg p-2">
+          <button className="relative hover:bg-gray-200 hover:bg-opacity-25 rounded-lg p-2">
             <Icon icon={theme === "light" ? icons.bellB : icons.bellW} />
             <span className="sr-only">Notifications</span>
             <div className="noti-badge -top-1 -right-1">5</div>

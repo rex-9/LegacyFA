@@ -11,7 +11,7 @@ const TransactionsAnalysisCard = ({
 }) => {
   const theme = useContext(ThemeContext);
   return (
-    <div className="w-1/2 h-80 p-4 rounded-lg bg-white">
+    <div className="w-1/2 h-80 p-4 rounded-lg dark-white">
       <Heading
         header={"Transactions"}
         action={"today"}
@@ -25,7 +25,7 @@ const TransactionsAnalysisCard = ({
         >
           {transaction.type === "Transfers" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={
                 theme === "light"
                   ? icons.transactionsB.icon
@@ -40,21 +40,21 @@ const TransactionsAnalysisCard = ({
           )}
           {transaction.type === "Taxi" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.carB.icon : icons.carW.icon}
               alt={theme === "light" ? icons.carB.label : icons.carW.label}
             />
           )}
           {transaction.type === "Supermarkets" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.bagB.icon : icons.bagW.icon}
               alt={theme === "light" ? icons.bagB.label : icons.bagW.label}
             />
           )}
           {transaction.type === "Rewards" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={
                 theme === "light" ? icons.databaseB.icon : icons.databaseW.icon
               }

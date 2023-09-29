@@ -7,7 +7,7 @@ import { useContext } from "react";
 const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
   const theme = useContext(ThemeContext);
   return (
-    <div className="w-1/2 h-80 p-4 rounded-lg bg-white">
+    <div className="w-1/2 h-80 p-4 rounded-lg dark-white">
       <Heading
         header={"Investment"}
         action={"today"}
@@ -21,21 +21,21 @@ const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
         >
           {stock.initials === "AAPL" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.appleB.icon : icons.appleW.icon}
               alt={theme === "light" ? icons.appleB.label : icons.appleW.label}
             />
           )}
           {stock.initials === "TSLA" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.teslaB.icon : icons.teslaW.icon}
               alt={theme === "light" ? icons.teslaB.label : icons.teslaW.label}
             />
           )}
           {stock.initials === "NFLX" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={
                 theme === "light" ? icons.netflixB.icon : icons.netflixW.icon
               }
@@ -46,7 +46,7 @@ const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
           )}
           {stock.initials === "AMZN" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.amazonB.icon : icons.amazonW.icon}
               alt={
                 theme === "light" ? icons.amazonB.label : icons.amazonW.label

@@ -14,7 +14,7 @@ import AreaChart from "../components/charts/AreaChart";
 
 const Home = () => {
   return (
-    <div className="w-[85%] bg-gray-200">
+    <div className="w-[85%] dark-gray">
       <Nav />
       <section className="flex-center !items-start h-full">
         <div className="w-3/4 h-full flex flex-col justify-between pl-4 pb-28 pt-4">

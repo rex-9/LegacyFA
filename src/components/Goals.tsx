@@ -8,7 +8,7 @@ import { ThemeContext } from "../App";
 const Goals = () => {
   const theme = useContext(ThemeContext);
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
+    <article className="h-1/3 w-[90%] p-4 rounded-lg dark-white">
       <Heading
         header={"Goals"}
         action={"add goal"}
@@ -21,21 +21,21 @@ const Goals = () => {
         >
           {goal.name === "Trip" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.planeB.icon : icons.planeW.icon}
               alt={theme === "light" ? icons.planeB.label : icons.planeW.label}
             />
           )}
           {goal.name === "House" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.houseB.icon : icons.houseW.icon}
               alt={theme === "light" ? icons.houseB.label : icons.houseW.label}
             />
           )}
           {goal.name === "Camera" && (
             <img
-              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              className="w-10 h-10 rounded-full dark-gray p-2"
               src={theme === "light" ? icons.cameraB.icon : icons.cameraW.icon}
               alt={
                 theme === "light" ? icons.cameraB.label : icons.cameraW.label

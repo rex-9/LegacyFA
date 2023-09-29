@@ -36,7 +36,7 @@ const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
   }) => {
     return (
       <button
-        className="p-2 w-full hover:bg-gray-200 flex-center my-2 relative"
+        className="p-2 w-full hover:bg-gray-200 dark:hover:bg-opacity-25 flex-center my-2 relative"
         onClick={onClick}
       >
         <span className="flex justify-start px-4 gap-4 w-2/3 text-lg">
@@ -57,7 +57,7 @@ const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
   };
 
   return (
-    <div className="w-[15%] text-center h-full relative dark-bg-white">
+    <div className="w-[15%] text-center h-full relative dark-white">
       <div className="text-2xl font-bold flex-center gap-4 py-6 font-quicksand dark-text-white">
         <PrefixIcon icon={icons.logo} size={"48"} /> Wallet
       </div>

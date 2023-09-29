@@ -34,7 +34,7 @@ const Heading = ({
   return (
     <div className="flex-center w-full !justify-between">
       <span className="text-2xl font-quicksand font-bold">{header}</span>
-      <button className="text-sm flex-center gap-2 text-gray-300 hover:text-black">
+      <button className="text-sm flex-center gap-2 text-gray-300 hover:text-black dark:hover:text-white">
         {action}
         <TinyIcon icon={icon} />
       </button>

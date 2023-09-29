@@ -8,7 +8,7 @@ import { ThemeContext } from "../App";
 const QuickTransfers = () => {
   const theme = useContext(ThemeContext);
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
+    <article className="h-1/3 w-[90%] p-4 rounded-lg dark-white">
       <Heading
         header={"Quick Transfers"}
         action={"add"}
@@ -18,10 +18,10 @@ const QuickTransfers = () => {
       {transfers.map((transfer: ITransfer, index: number) => (
         <button
           key={transfer.account}
-          className="flex-center hover:bg-gray-200 !justify-around gap-4 w-full p-3"
+          className="flex-center hover:bg-gray-200 hover:bg-opacity-25 !justify-around gap-4 w-full p-3"
           style={{ borderTop: index !== 0 ? "1px solid gray" : "" }}
         >
-          <span className="bg-gray-200 rounded-full px-4 py-2 w-10">
+          <span className="dark-gray rounded-full px-4 py-2 w-10">
             {transfer.name[0].toUpperCase()}
           </span>
           <div className="flex-grow text-start">
