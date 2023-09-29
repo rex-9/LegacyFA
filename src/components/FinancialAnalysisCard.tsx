@@ -1,5 +1,6 @@
 import { icons } from "../assets";
-import { Heading, TinyIcon } from "../helpers";
+import { Heading } from "../helpers";
+import ColumnChart from "./ColumnChart";
 const FinancialAnalysisCard = () => {
   return (
     <article className="relative bg-white h-72 w-1/3 p-4 rounded-lg">
@@ -8,7 +9,7 @@ const FinancialAnalysisCard = () => {
         action={"this month"}
         icon={icons.downArrow}
       />
-      <div className="flex-center !justify-start gap-4 my-4">
+      {/* <div className="flex-center !justify-start gap-4 my-4">
         <span className="text-sm flex-center gap-2">
           <div className="rounded-full h-3 w-3" />
           Expanses
@@ -19,7 +20,8 @@ const FinancialAnalysisCard = () => {
           Income
           <TinyIcon icon={icons.downArrow} />
         </span>
-      </div>
+      </div> */}
+      <ColumnChart expense="Expense" income="Income" />
     </article>
   );
 };

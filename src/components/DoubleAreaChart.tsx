@@ -2,7 +2,6 @@ import Chart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 
 const DoubleAreaChart = ({
-  label,
   lastYear,
   thisYear,
 }: {
@@ -101,7 +100,6 @@ const DoubleAreaChart = ({
           },
           label: {
             borderWidth: 0,
-            borderColor: "red",
             text: lastYear.toString(),
             textAnchor: "start",
             offsetX: 15,

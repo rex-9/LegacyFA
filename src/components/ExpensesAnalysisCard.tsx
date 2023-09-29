@@ -1,22 +1,19 @@
 import { icons } from "../assets";
 import { Heading } from "../helpers";
 import { IExpense } from "../interface";
+import DonutChart from "./DonutChart";
 
 const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
   return (
-    <div className="w-2/5 h-80 p-4 rounded-lg bg-white">
+    <article className="expenses-card w-2/5 h-80 p-4 rounded-lg bg-white">
       <Heading
         header={"Expenses"}
         action={"last week"}
         icon={icons.downArrow}
       />
-      <div className="flex-center !justify-around my-4">
-        <img
-          // className="absolute bottom-0 right-0"
-          src={icons.logo.icon}
-          alt={icons.logo.label}
-        />
-        <div>
+      <div className="relative flex-center !justify-around">
+        <DonutChart />
+        {/* <div>
           {expenses.map((expense: IExpense) => (
             <div
               key={expense.amount}
@@ -30,12 +27,10 @@ const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
               <span>${expense.amount}</span>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
-      <div className="mt-8">
-        You have spent 16% less money this week than last week.
-      </div>
-    </div>
+      <div>You have spent 16% less money this week than last week.</div>
+    </article>
   );
 };
 

@@ -14,3 +14,11 @@
     @apply absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-purple-500 border-2 border-white rounded-full;
   }
 }
+
+/* Override the Built In Style of the Apex Chart */
+.expenses-card .apexcharts-legend {
+  padding: 0;
+  right: 50px !important;
+  top: 30px !important;
+  height: fit-content;
+}
