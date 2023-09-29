@@ -36,16 +36,11 @@
   padding: 0;
   right: 30px !important;
   top: 40px !important;
-  height: fit-content;
   color: white !important;
 }
 
 .apexcharts-tooltip {
   color: #000;
-}
-
-#SvgjsTspan9152 {
-  color: white !important;
 }
 
 .apexcharts-legend-text {

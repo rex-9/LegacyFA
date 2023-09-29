@@ -16,7 +16,7 @@ const AreaChart = ({ label }: { label: string }) => {
     },
     stroke: {
       width: 2,
-      curve: "smooth" as "smooth",
+      curve: "smooth" as const,
     },
     fill: {
       type: "gradient",

@@ -1,7 +1,14 @@
+import { Dispatch, SetStateAction } from "react";
 import { icons } from "../assets";
 import { IIcon } from "../interface";
 
-const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
+const Panel = ({
+  theme,
+  setTheme,
+}: {
+  theme: string;
+  setTheme: Dispatch<SetStateAction<string>>;
+}) => {
   const handleThemeSwitch: () => void = () => {
     if (localStorage.getItem("theme") === "light") {
       setTheme("dark");

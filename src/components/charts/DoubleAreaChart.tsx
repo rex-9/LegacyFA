@@ -19,7 +19,7 @@ const DoubleAreaChart = ({
     },
     stroke: {
       width: 2,
-      curve: "smooth" as "smooth",
+      curve: "smooth" as const,
     },
     dataLabels: {
       enabled: false,

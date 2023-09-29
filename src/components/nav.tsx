@@ -4,7 +4,7 @@ import { currentUser } from "../data";
 import { IIcon } from "../interface";
 import { ThemeContext } from "../App";
 
-const nav = () => {
+const Nav = () => {
   const theme = useContext(ThemeContext);
 
   const Icon = ({ icon }: { icon: IIcon }) => {
@@ -57,4 +57,4 @@ const nav = () => {
   );
 };
 
-export default nav;
+export default Nav;
