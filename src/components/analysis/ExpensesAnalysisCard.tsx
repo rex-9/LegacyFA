@@ -1,16 +1,19 @@
+import { ThemeContext } from "../../App";
 import { icons } from "../../assets";
 import { Heading } from "../../helpers";
-// import { IExpense } from "../../interface";
 import DonutChart from "../charts/DonutChart";
+import { useContext } from "react";
+// import { IExpense } from "../../interface";
 
 // const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
 const ExpensesAnalysisCard = () => {
+  const theme = useContext(ThemeContext);
   return (
     <article className="expenses-card w-2/5 h-80 p-4 rounded-lg bg-white">
       <Heading
         header={"Expenses"}
         action={"last week"}
-        icon={icons.downArrow}
+        icon={theme === "light" ? icons.downArrowB : icons.downArrowW}
       />
       <div className="relative flex-center !justify-around">
         <DonutChart />

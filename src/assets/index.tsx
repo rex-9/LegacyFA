@@ -1,76 +1,116 @@
 import logo from "./logo.png";
 import visa from "./visa.svg";
 import master from "./master.png";
+import amazonB from "./amazon-b.svg";
+import amazonW from "./amazon-w.svg";
 import girl from "./girl.jpg";
-import lens from "./lens.svg";
-import bag from "./bag.svg";
-import bell from "./bell.svg";
-import camera from "./camera.svg";
-import car from "./car.svg";
-import chat from "./chat.svg";
-import dashboard from "./dashboard.svg";
-import database from "./database.svg";
-import downArrow from "./downArrow.svg";
-import dollar from "./dollar.svg";
-import house from "./house.svg";
-import investment from "./investment.svg";
-import logOut from "./logOut.svg";
-import person from "./person.svg";
-import plane from "./plane.svg";
-import setting from "./setting.svg";
-import transactions from "./transactions.svg";
-import wallet from "./wallet.svg";
-import mail from "./mail.svg";
-import increase from "./increase.svg";
-import rightArrow from "./rightArrow.svg";
-import plus from "./plus.svg";
-import apple from "./apple.svg";
-import tesla from "./tesla.svg";
-import amazon from "./amazon.tsx";
-import netflix from "./netflix.svg";
+import dashboardB from "./dashboard-b.svg";
+import transactionsB from "./transactions-b.svg";
+import dashboardW from "./dashboard-w.svg";
+import transactionsW from "./transactions-w.svg";
 import sim from "./sim.svg";
+import lensB from "./lens-b.svg";
+import lensW from "./lens-w.svg";
+import bagB from "./bag-b.svg";
+import bagW from "./bag-w.svg";
+import bellB from "./bell-b.svg";
+import bellW from "./bell-w.svg";
+import cameraB from "./camera-b.svg";
+import cameraW from "./camera-w.svg";
+import carB from "./car-b.svg";
+import carW from "./car-w.svg";
+import chatB from "./chat-b.svg";
+import chatW from "./chat-w.svg";
+import databaseB from "./database-b.svg";
+import databaseW from "./database-w.svg";
+import downArrowB from "./downArrow-b.svg";
+import downArrowW from "./downArrow-w.svg";
+import dollarB from "./dollar-b.svg";
+import dollarW from "./dollar-w.svg";
+import houseB from "./house-b.svg";
+import houseW from "./house-w.svg";
+import investmentB from "./investment-b.svg";
+import investmentW from "./investment-w.svg";
+import logOutB from "./logOut-b.svg";
+import logOutW from "./logOut-w.svg";
+import personB from "./person-b.svg";
+import personW from "./person-w.svg";
+import planeB from "./plane-b.svg";
+import planeW from "./plane-w.svg";
+import settingB from "./setting-b.svg";
+import settingW from "./setting-w.svg";
+import walletB from "./wallet-b.svg";
+import walletW from "./wallet-w.svg";
+import mailB from "./mail-b.svg";
+import mailW from "./mail-w.svg";
+import increaseB from "./increase-b.svg";
+import increaseW from "./increase-w.svg";
+import rightArrowB from "./rightArrow-b.svg";
+import rightArrowW from "./rightArrow-w.svg";
+import plusB from "./plus-b.svg";
+import plusW from "./plus-w.svg";
+import appleB from "./apple-b.svg";
+import appleW from "./apple-w.svg";
+import teslaB from "./tesla-b.svg";
+import teslaW from "./tesla-w.svg";
+import netflixB from "./netflix-b.svg";
+import netflixW from "./netflix-w.svg";
 import { IIcon } from "../interface.tsx";
-import AmazonSvg from "./amazon.tsx";
-
-const iconFunc = ({ icon, fill }: { icon: string; fill: string }) => {
-  switch (icon) {
-    case "amazon":
-      return <AmazonSvg fill="red" />;
-      break;
-
-    default:
-      break;
-  }
-};
 
 const icons: { [key: string]: IIcon } = {
   logo: { icon: logo, label: "logo" },
-  lens: { icon: lens, label: "lens" },
-  mail: { icon: mail, label: "mail" },
-  bag: { icon: bag, label: "bag" },
-  bell: { icon: bell, label: "bell" },
-  camera: { icon: camera, label: "camera" },
-  car: { icon: car, label: "car" },
-  chat: { icon: chat, label: "chat" },
-  dashboard: { icon: dashboard, label: "dashboard" },
-  downArrow: { icon: downArrow, label: "downArrow" },
-  database: { icon: database, label: "database" },
-  dollar: { icon: dollar, label: "dollar" },
-  house: { icon: house, label: "house" },
-  investment: { icon: investment, label: "investment" },
-  logOut: { icon: logOut, label: "logOut" },
-  person: { icon: person, label: "person" },
-  plane: { icon: plane, label: "plane" },
-  setting: { icon: setting, label: "setting" },
-  transactions: { icon: transactions, label: "transactions" },
-  wallet: { icon: wallet, label: "wallet" },
-  increase: { icon: increase, label: "increase" },
-  rightArrow: { icon: rightArrow, label: "rightArrow" },
-  plus: { icon: plus, label: "plus" },
-  apple: { icon: apple, label: "apple" },
-  amazon: { icon: amazon, label: "amazon" },
-  tesla: { icon: tesla, label: "tesla" },
-  netflix: { icon: netflix, label: "netflix" },
+  lensB: { icon: lensB, label: "lensB" },
+  lensW: { icon: lensW, label: "lensW" },
+  mailB: { icon: mailB, label: "mailB" },
+  mailW: { icon: mailW, label: "mailW" },
+  bagB: { icon: bagB, label: "bagB" },
+  bagW: { icon: bagW, label: "bagW" },
+  bellB: { icon: bellB, label: "bellB" },
+  bellW: { icon: bellW, label: "bellW" },
+  cameraB: { icon: cameraB, label: "cameraB" },
+  cameraW: { icon: cameraW, label: "cameraW" },
+  carB: { icon: carB, label: "carB" },
+  carW: { icon: carW, label: "carW" },
+  chatB: { icon: chatB, label: "chatB" },
+  chatW: { icon: chatW, label: "chatW" },
+  dashboardB: { icon: dashboardB, label: "dashboard" },
+  dashboardW: { icon: dashboardW, label: "dashboard" },
+  downArrowB: { icon: downArrowB, label: "downArrowB" },
+  downArrowW: { icon: downArrowW, label: "downArrowW" },
+  databaseB: { icon: databaseB, label: "databaseB" },
+  databaseW: { icon: databaseW, label: "databaseW" },
+  dollarB: { icon: dollarB, label: "dollarB" },
+  dollarW: { icon: dollarW, label: "dollarW" },
+  houseB: { icon: houseB, label: "houseB" },
+  houseW: { icon: houseW, label: "houseW" },
+  investmentB: { icon: investmentB, label: "investmentB" },
+  investmentW: { icon: investmentW, label: "investmentW" },
+  logOutB: { icon: logOutB, label: "logOutB" },
+  logOutW: { icon: logOutW, label: "logOutW" },
+  personB: { icon: personB, label: "personB" },
+  personW: { icon: personW, label: "personW" },
+  planeB: { icon: planeB, label: "planeB" },
+  planeW: { icon: planeW, label: "planeW" },
+  settingB: { icon: settingB, label: "settingB" },
+  settingW: { icon: settingW, label: "settingW" },
+  transactionsB: { icon: transactionsB, label: "transactionsB" },
+  transactionsW: { icon: transactionsW, label: "transactionsW" },
+  walletB: { icon: walletB, label: "walletB" },
+  walletW: { icon: walletW, label: "walletW" },
+  increaseB: { icon: increaseB, label: "increaseB" },
+  increaseW: { icon: increaseW, label: "increaseW" },
+  rightArrowB: { icon: rightArrowB, label: "rightArrowB" },
+  rightArrowW: { icon: rightArrowW, label: "rightArrowW" },
+  plusB: { icon: plusB, label: "plusB" },
+  plusW: { icon: plusW, label: "plusW" },
+  appleB: { icon: appleB, label: "appleB" },
+  appleW: { icon: appleW, label: "appleW" },
+  amazonB: { icon: amazonB, label: "amazonB" },
+  amazonW: { icon: amazonW, label: "amazonW" },
+  teslaB: { icon: teslaB, label: "teslaB" },
+  teslaW: { icon: teslaW, label: "teslaW" },
+  netflixB: { icon: netflixB, label: "netflixB" },
+  netflixW: { icon: netflixW, label: "netflixW" },
   sim: { icon: sim, label: "sim" },
 };
 

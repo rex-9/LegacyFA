@@ -1,31 +1,7 @@
-import { useEffect, useState } from "react";
 import { icons } from "../assets";
 import { IIcon } from "../interface";
 
-const Panel = () => {
-  const [theme, setTheme] = useState("light");
-
-  // if local storage is empty save theme as light
-  useEffect(() => {
-    if (localStorage.getItem("theme") === null) {
-      localStorage.setItem("theme", "light");
-    }
-  }, []);
-
-  useEffect(() => {
-    // select html elem
-    const html = document.querySelector("html");
-    //add or remove class dark in html elem according to theme in localstorage.
-    if (localStorage.getItem("theme") === "dark") {
-      html?.classList.add("dark");
-      setTheme("dark");
-    } else {
-      html?.classList.remove("dark");
-      setTheme("light");
-    }
-  }, [theme]);
-
-  // handle switch theme
+const Panel = ({ theme, setTheme }: { theme: string; setTheme: any }) => {
   const handleThemeSwitch: () => void = () => {
     if (localStorage.getItem("theme") === "light") {
       setTheme("dark");
@@ -86,44 +62,44 @@ const Panel = () => {
         <PrefixIcon icon={icons.logo} size={"48"} /> Wallet
       </div>
       <NavBtn
-        icon={icons.dashboard}
+        icon={theme === "light" ? icons.dashboardB : icons.dashboardW}
         label="Dashboard"
         onClick={() => navTo("Dashboard")}
       />
       <NavBtn
-        icon={icons.wallet}
+        icon={theme === "light" ? icons.walletB : icons.walletW}
         label="Wallet"
         onClick={() => navTo("Wallet")}
       />
       <NavBtn
-        icon={icons.transactions}
+        icon={theme === "light" ? icons.transactionsB : icons.transactionsW}
         label="Transactions"
         onClick={() => navTo("Transactions")}
         noti={1}
       />
       <NavBtn
-        icon={icons.database}
+        icon={theme === "light" ? icons.databaseB : icons.databaseW}
         label="Cashback"
         onClick={() => navTo("Cashback")}
         noti={4}
       />
       <NavBtn
-        icon={icons.dollar}
+        icon={theme === "light" ? icons.dollarB : icons.dollarW}
         label="Payment"
         onClick={() => navTo("Payment")}
       />
       <NavBtn
-        icon={icons.investment}
+        icon={theme === "light" ? icons.investmentB : icons.investmentW}
         label="Investment"
         onClick={() => navTo("Investment")}
       />
       <NavBtn
-        icon={icons.person}
+        icon={theme === "light" ? icons.personB : icons.personW}
         label="Profile"
         onClick={() => navTo("Profile")}
       />
       <NavBtn
-        icon={icons.chat}
+        icon={theme === "light" ? icons.chatB : icons.chatW}
         label="Support"
         onClick={() => navTo("Support")}
       />
@@ -131,12 +107,12 @@ const Panel = () => {
         <div className="w-2/3 border-[1px] h-[1px]" />
       </div>
       <NavBtn
-        icon={icons.setting}
+        icon={theme === "light" ? icons.settingB : icons.settingW}
         label="Settings"
         onClick={() => navTo("Settings")}
       />
       <NavBtn
-        icon={icons.logOut}
+        icon={theme === "light" ? icons.logOutB : icons.logOutW}
         label="Logout"
         onClick={() => navTo("Log out")}
       />

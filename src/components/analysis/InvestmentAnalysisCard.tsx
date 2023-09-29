@@ -1,36 +1,77 @@
+import { ThemeContext } from "../../App";
 import { icons } from "../../assets";
 import { Heading, TinyIcon } from "../../helpers";
 import { IStock } from "../../interface";
+import { useContext } from "react";
 
 const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
+  const theme = useContext(ThemeContext);
   return (
     <div className="w-1/2 h-80 p-4 rounded-lg bg-white">
-      <Heading header={"Investment"} action={"today"} icon={icons.downArrow} />
+      <Heading
+        header={"Investment"}
+        action={"today"}
+        icon={theme === "light" ? icons.downArrowB : icons.downArrowW}
+      />
       {stocks.map((stock: IStock, index: number) => (
         <div
           key={stock.initials}
           className="flex-center !justify-between gap-4 py-1 my-1"
           style={{ borderTop: index !== 0 ? "1px solid black" : "" }}
         >
-          <img
-            className="w-10 h-10 rounded-full bg-gray-200 p-2"
-            src={stock.icon.icon}
-            alt={stock.icon.label}
-          />
+          {stock.initials === "AAPL" && (
+            <img
+              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              src={theme === "light" ? icons.appleB.icon : icons.appleW.icon}
+              alt={theme === "light" ? icons.appleB.label : icons.appleW.label}
+            />
+          )}
+          {stock.initials === "TSLA" && (
+            <img
+              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              src={theme === "light" ? icons.teslaB.icon : icons.teslaW.icon}
+              alt={theme === "light" ? icons.teslaB.label : icons.teslaW.label}
+            />
+          )}
+          {stock.initials === "NFLX" && (
+            <img
+              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              src={
+                theme === "light" ? icons.netflixB.icon : icons.netflixW.icon
+              }
+              alt={
+                theme === "light" ? icons.netflixB.label : icons.netflixW.label
+              }
+            />
+          )}
+          {stock.initials === "AMZN" && (
+            <img
+              className="w-10 h-10 rounded-full bg-gray-200 p-2"
+              src={theme === "light" ? icons.amazonB.icon : icons.amazonW.icon}
+              alt={
+                theme === "light" ? icons.amazonB.label : icons.amazonW.label
+              }
+            />
+          )}
           <div className="w-20">
             <p>{stock.initials.toUpperCase()}</p>
             <p className="text-gray-300 text-sm">{stock.name}</p>
           </div>
           {stock.increase ? (
             <span className="text-green-600 text-sm flex-center gap-1 flex-grow !justify-start">
-              <TinyIcon icon={icons.increase} />
+              <TinyIcon
+                icon={theme === "light" ? icons.increaseB : icons.increaseW}
+              />
               <span>
                 +{parseFloat(((stock.amount / stock.price) * 100).toFixed(2))}%
               </span>
             </span>
           ) : (
             <span className="text-red-600 text-sm flex-center gap-1 flex-grow !justify-start">
-              <TinyIcon icon={icons.increase} reverse={true} />
+              <TinyIcon
+                icon={theme === "light" ? icons.increaseB : icons.increaseW}
+                reverse={true}
+              />
               <span>
                 -{parseFloat(((stock.amount / stock.price) * 100).toFixed(2))}%
               </span>

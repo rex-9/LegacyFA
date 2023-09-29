@@ -24,7 +24,6 @@ export interface ITransaction {
 }
 
 export interface IStock {
-  icon: IIcon;
   initials: string;
   name: string;
   price: number;

@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { icons, images } from "../assets";
 import { currentUser } from "../data";
 import { IIcon } from "../interface";
+import { ThemeContext } from "../App";
 
 const nav = () => {
+  const theme = useContext(ThemeContext);
+
   const Icon = ({ icon }: { icon: IIcon }) => {
     return (
       <img className="w-5 h-5 rounded-lg" src={icon.icon} alt={icon.label} />
@@ -28,7 +32,7 @@ const nav = () => {
               required
             />
             <button type="submit" className="absolute right-6 bottom-[20%]">
-              <Icon icon={icons.lens} />
+              <Icon icon={theme === "light" ? icons.lensB : icons.lensW} />
             </button>
           </div>
         </form>
@@ -40,10 +44,10 @@ const nav = () => {
           />
           <span className="text-base flex-grow">Hello {currentUser.name}!</span>
           <button className="hover:bg-gray-200 rounded-lg p-2">
-            <Icon icon={icons.mail} />
+            <Icon icon={theme === "light" ? icons.mailB : icons.mailW} />
           </button>
           <button className="relative hover:bg-gray-200 rounded-lg p-2">
-            <Icon icon={icons.bell} />
+            <Icon icon={theme === "light" ? icons.bellB : icons.bellW} />
             <span className="sr-only">Notifications</span>
             <div className="noti-badge -top-1 -right-1">5</div>
           </button>

@@ -1,9 +1,16 @@
-import { icons } from "./assets";
-import { ICard, IExpense, IGoal, INet, IStock, ITransaction, ITransfer } from "./interface";
+import {
+  ICard,
+  IExpense,
+  IGoal,
+  INet,
+  IStock,
+  ITransaction,
+  ITransfer,
+} from "./interface";
 
 const currentUser = {
   name: "Michaela",
-}
+};
 
 const nets: INet[] = [
   {
@@ -88,7 +95,6 @@ const transactions: ITransaction[] = [
 
 const stocks: IStock[] = [
   {
-    icon: icons.apple,
     initials: "AAPL",
     name: "Apple Inc.",
     price: 3204.05,
@@ -96,7 +102,6 @@ const stocks: IStock[] = [
     increase: true,
   },
   {
-    icon: icons.tesla,
     initials: "TSLA",
     name: "Tesla",
     price: 8547.82,
@@ -104,7 +109,6 @@ const stocks: IStock[] = [
     increase: false,
   },
   {
-    icon: icons.netflix,
     initials: "NFLX",
     name: "Netflix",
     price: 1210,
@@ -112,7 +116,6 @@ const stocks: IStock[] = [
     increase: false,
   },
   {
-    icon: icons.amazon,
     initials: "AMZN",
     name: "Amazon",
     price: 14367.75,
@@ -127,14 +130,14 @@ const cards: ICard[] = [
     account: 4654536740550556,
     expireDate: "05/24",
     balance: 5089.56,
-    type: 'VISA',
+    type: "VISA",
   },
   {
     name: "Michaela Evans",
     account: 4654536740550556,
     expireDate: "09/25",
     balance: 5089.56,
-    type: 'Master',
+    type: "Master",
   },
 ];
 
@@ -171,4 +174,13 @@ const goals: IGoal[] = [
   },
 ];
 
-export { currentUser, nets, expenses, transactions, stocks, cards, transfers, goals };
+export {
+  currentUser,
+  nets,
+  expenses,
+  transactions,
+  stocks,
+  cards,
+  transfers,
+  goals,
+};

@@ -2,11 +2,18 @@ import { icons } from "../assets";
 import { goals } from "../data";
 import { Heading } from "../helpers";
 import { IGoal } from "../interface";
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const Goals = () => {
+  const theme = useContext(ThemeContext);
   return (
     <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
-      <Heading header={"Goals"} action={"add goal"} icon={icons.downArrow} />
+      <Heading
+        header={"Goals"}
+        action={"add goal"}
+        icon={theme === "light" ? icons.downArrowB : icons.downArrowW}
+      />
       {goals.map((goal: IGoal) => (
         <div
           key={goal.name}
@@ -15,22 +22,24 @@ const Goals = () => {
           {goal.name === "Trip" && (
             <img
               className="w-10 h-10 rounded-full bg-gray-200 p-2"
-              src={icons.plane.icon}
-              alt={icons.plane.label}
+              src={theme === "light" ? icons.planeB.icon : icons.planeW.icon}
+              alt={theme === "light" ? icons.planeB.label : icons.planeW.label}
             />
           )}
           {goal.name === "House" && (
             <img
               className="w-10 h-10 rounded-full bg-gray-200 p-2"
-              src={icons.house.icon}
-              alt={icons.house.label}
+              src={theme === "light" ? icons.houseB.icon : icons.houseW.icon}
+              alt={theme === "light" ? icons.houseB.label : icons.houseW.label}
             />
           )}
           {goal.name === "Camera" && (
             <img
               className="w-10 h-10 rounded-full bg-gray-200 p-2"
-              src={icons.camera.icon}
-              alt={icons.camera.label}
+              src={theme === "light" ? icons.cameraB.icon : icons.cameraW.icon}
+              alt={
+                theme === "light" ? icons.cameraB.label : icons.cameraW.label
+              }
             />
           )}
           <div className="flex-grow">

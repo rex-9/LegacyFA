@@ -1,9 +1,12 @@
+import { ThemeContext } from "../App";
 import { icons, images } from "../assets";
 import { cards } from "../data";
 import { Heading } from "../helpers";
 import { ICard } from "../interface";
+import { useContext } from "react";
 
 const MyCards = () => {
+  const theme = useContext(ThemeContext);
   const visa = cards[0];
   const master = cards[1];
   const Card = ({ card }: { card: ICard }) => {
@@ -64,7 +67,11 @@ const MyCards = () => {
 
   return (
     <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
-      <Heading header={"My Cards"} action={"add card"} icon={icons.downArrow} />
+      <Heading
+        header={"My Cards"}
+        action={"add card"}
+        icon={theme === "light" ? icons.downArrowB : icons.downArrowW}
+      />
       <div className="mt-2 relative h-44">
         <Card card={visa} />
         <Card card={master} />

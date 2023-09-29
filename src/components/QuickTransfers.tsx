@@ -3,10 +3,17 @@ import { transfers } from "../data";
 import { Heading } from "../helpers";
 import { ITransfer } from "../interface";
 
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 const QuickTransfers = () => {
+  const theme = useContext(ThemeContext);
   return (
     <article className="h-1/3 w-[90%] p-4 rounded-lg bg-white">
-      <Heading header={"Quick Transfers"} action={"add"} icon={icons.plus} />
+      <Heading
+        header={"Quick Transfers"}
+        action={"add"}
+        icon={theme === "light" ? icons.plusB : icons.plusW}
+      />
       <div className="h-3" />
       {transfers.map((transfer: ITransfer, index: number) => (
         <button
@@ -25,8 +32,12 @@ const QuickTransfers = () => {
           </div>
           <img
             className="w-6 h-6"
-            src={icons.rightArrow.icon}
-            alt={icons.rightArrow.label}
+            src={
+              theme === "light"
+                ? icons.rightArrowB.icon
+                : icons.rightArrowW.icon
+            }
+            alt={icons.rightArrowB.label}
           />
         </button>
       ))}
