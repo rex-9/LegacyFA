@@ -149,7 +149,7 @@ const DoubleAreaChart = ({
 
   const series = [
     {
-      name: lastYear,
+      name: lastYear.toString(),
       data: [
         0, 2418, 6456, 5555, 6526, 4356, 6558.67, 6456, 5555, 6526, 4356,
         6558.67,
@@ -157,7 +157,7 @@ const DoubleAreaChart = ({
       color: "red",
     },
     {
-      name: thisYear,
+      name: thisYear.toString(),
       data: [
         0, 1418, 5456, 4555, 3526, 6356, 3558.67, 8456, 3555, 4526, 6356,
         6558.67,
