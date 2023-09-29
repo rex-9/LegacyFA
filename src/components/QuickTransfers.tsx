@@ -18,7 +18,7 @@ const QuickTransfers = () => {
       {transfers.map((transfer: ITransfer, index: number) => (
         <button
           key={transfer.account}
-          className="flex-center hover:bg-gray-200 hover:bg-opacity-25 !justify-around gap-4 w-full p-3"
+          className="flex-center hover:bg-gray-200 dark:hover:bg-opacity-25 !justify-around gap-4 w-full p-3"
           style={{ borderTop: index !== 0 ? "1px solid gray" : "" }}
         >
           <span className="dark-gray rounded-full px-4 py-2 w-10">
