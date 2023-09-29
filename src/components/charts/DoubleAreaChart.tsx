@@ -9,7 +9,6 @@ const DoubleAreaChart = ({
   lastYear: number;
   thisYear: number;
 }) => {
-  // Define the chart options and data
   const options: ApexOptions = {
     chart: {
       id: "area-chart",
@@ -19,8 +18,8 @@ const DoubleAreaChart = ({
       },
     },
     stroke: {
-      width: 2, // Adjust the width value to make the border thinner
-      curve: "smooth" as "smooth", // Make the lines smoother
+      width: 2,
+      curve: "smooth" as "smooth",
     },
     dataLabels: {
       enabled: false,

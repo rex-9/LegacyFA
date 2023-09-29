@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
-import { icons } from "../assets";
-import { Heading, TinyIcon } from "../helpers";
+import { icons } from "../../assets";
+import { Heading, TinyIcon } from "../../helpers";
 const NetAnalysisCard = ({
   label,
   amount,

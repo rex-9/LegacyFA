@@ -1,9 +1,10 @@
-import { icons } from "../assets";
-import { Heading } from "../helpers";
-import { IExpense } from "../interface";
-import DonutChart from "./DonutChart";
+import { icons } from "../../assets";
+import { Heading } from "../../helpers";
+// import { IExpense } from "../../interface";
+import DonutChart from "../charts/DonutChart";
 
-const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
+// const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
+const ExpensesAnalysisCard = () => {
   return (
     <article className="expenses-card w-2/5 h-80 p-4 rounded-lg bg-white">
       <Heading

@@ -1,6 +1,6 @@
-import { icons } from "../assets";
-import { Heading } from "../helpers";
-import { ITransaction } from "../interface";
+import { icons } from "../../assets";
+import { Heading } from "../../helpers";
+import { ITransaction } from "../../interface";
 
 const TransactionsAnalysisCard = ({
   transactions,

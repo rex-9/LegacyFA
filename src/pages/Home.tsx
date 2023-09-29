@@ -1,16 +1,16 @@
 import Nav from "../components/Nav";
-import NetAnalysisCard from "../components/NetAnalysisCard";
-import RevenueAnalysisCard from "../components/RevenueAnalysisCard";
-import FinancialAnalysisCard from "../components/FinancialAnalysisCard";
-import ExpensesAnalysisCard from "../components/ExpensesAnalysisCard";
-import InvestmentAnalysisCard from "../components/InvestmentAnalysisCard";
-import TransactionsAnalysisCard from "../components/TransactionsAnalysisCard";
-import { expenses, nets, stocks, transactions } from "../data";
+import NetAnalysisCard from "../components/analysis/NetAnalysisCard";
+import RevenueAnalysisCard from "../components/analysis/RevenueAnalysisCard";
+import FinancialAnalysisCard from "../components/analysis/FinancialAnalysisCard";
+import ExpensesAnalysisCard from "../components/analysis/ExpensesAnalysisCard";
+import InvestmentAnalysisCard from "../components/analysis/InvestmentAnalysisCard";
+import TransactionsAnalysisCard from "../components/analysis/TransactionsAnalysisCard";
+import { nets, stocks, transactions } from "../data";
 import QuickTransfers from "../components/QuickTransfers";
 import Goals from "../components/Goals";
 import MyCards from "../components/MyCards";
 import { INet } from "../interface";
-import AreaChart from "../components/AreaChart";
+import AreaChart from "../components/charts/AreaChart";
 
 const Home = () => {
   return (
@@ -36,7 +36,8 @@ const Home = () => {
             <FinancialAnalysisCard />
           </div>
           <div className="flex-center mx-4 gap-4">
-            <ExpensesAnalysisCard expenses={expenses} />
+            <ExpensesAnalysisCard />
+            {/* <ExpensesAnalysisCard expenses={expenses} /> */}
             <div className="w-3/5 flex-center gap-4">
               <TransactionsAnalysisCard transactions={transactions} />
               <InvestmentAnalysisCard stocks={stocks} />

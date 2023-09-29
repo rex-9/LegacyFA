@@ -1,6 +1,6 @@
-import { icons } from "../assets";
-import { Heading, TinyIcon } from "../helpers";
-import { IStock } from "../interface";
+import { icons } from "../../assets";
+import { Heading, TinyIcon } from "../../helpers";
+import { IStock } from "../../interface";
 
 const InvestmentAnalysisCard = ({ stocks }: { stocks: IStock[] }) => {
   return (

@@ -1,4 +1,4 @@
-import DoubleAreaChart from "./DoubleAreaChart";
+import DoubleAreaChart from "./../charts/DoubleAreaChart";
 const RevenueAnalysisCard = ({
   lastYear,
   thisYear,

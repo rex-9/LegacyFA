@@ -1,6 +1,6 @@
-import { icons } from "../assets";
-import { Heading } from "../helpers";
-import ColumnChart from "./ColumnChart";
+import { icons } from "../../assets";
+import { Heading } from "../../helpers";
+import ColumnChart from "./../charts/ColumnChart";
 const FinancialAnalysisCard = () => {
   return (
     <article className="relative bg-white h-72 w-1/3 p-4 rounded-lg">

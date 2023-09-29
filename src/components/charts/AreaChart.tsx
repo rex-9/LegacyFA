@@ -1,7 +1,6 @@
 import Chart from "react-apexcharts";
 
 const AreaChart = ({ label }: { label: string }) => {
-  // Define the chart options and data
   const options = {
     chart: {
       id: "area-chart",
@@ -12,8 +11,8 @@ const AreaChart = ({ label }: { label: string }) => {
       },
     },
     stroke: {
-      width: 2, // Adjust the width value to make the border thinner
-      curve: "smooth" as "smooth", // Make the lines smoother
+      width: 2,
+      curve: "smooth" as "smooth",
     },
     fill: {
       type: "gradient",
