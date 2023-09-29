@@ -26,10 +26,22 @@ import rightArrow from "./rightArrow.svg";
 import plus from "./plus.svg";
 import apple from "./apple.svg";
 import tesla from "./tesla.svg";
-import amazon from "./amazon.svg";
+import amazon from "./amazon.tsx";
 import netflix from "./netflix.svg";
 import sim from "./sim.svg";
-import { IIcon } from "../interface";
+import { IIcon } from "../interface.tsx";
+import AmazonSvg from "./amazon.tsx";
+
+const iconFunc = ({ icon, fill }: { icon: string; fill: string }) => {
+  switch (icon) {
+    case "amazon":
+      return <AmazonSvg fill="red" />;
+      break;
+
+    default:
+      break;
+  }
+};
 
 const icons: { [key: string]: IIcon } = {
   logo: { icon: logo, label: "logo" },

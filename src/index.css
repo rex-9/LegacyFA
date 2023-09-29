@@ -13,6 +13,14 @@
   .noti-badge {
     @apply absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-purple-500 border-2 border-white rounded-full;
   }
+
+  .dark-bg-white {
+    @apply bg-white dark:bg-[#2C2351]
+  }
+
+  .dark-bg-white {
+    @apply dark:text-white text-[#2C2351]
+  }
 }
 
 /* Override the Built In Style of the Apex Chart */
