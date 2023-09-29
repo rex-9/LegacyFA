@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 import { icons } from "../assets";
 import { Heading, TinyIcon } from "../helpers";
 const NetAnalysisCard = ({
@@ -5,11 +7,13 @@ const NetAnalysisCard = ({
   amount,
   percentage,
   increase,
+  chart,
 }: {
   label: string;
   amount: number;
   percentage: number;
   increase: boolean;
+  chart: ReactNode;
 }) => {
   const [integerPart, decimalPart] = amount.toString().split(".");
   return (
@@ -30,11 +34,7 @@ const NetAnalysisCard = ({
           <span>-{percentage}%</span>
         </span>
       )}
-      <img
-        className="absolute bottom-0 right-0"
-        src={icons.logo.icon}
-        alt={icons.logo.label}
-      />
+      {chart}
     </article>
   );
 };

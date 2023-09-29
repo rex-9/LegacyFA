@@ -20,11 +20,6 @@ const FinancialAnalysisCard = () => {
           <TinyIcon icon={icons.downArrow} />
         </span>
       </div>
-      <img
-        // className="absolute bottom-0 right-0"
-        src={icons.logo.icon}
-        alt={icons.logo.label}
-      />
     </article>
   );
 };

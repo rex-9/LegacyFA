@@ -1,5 +1,4 @@
-import { TinyIcon } from "../helpers";
-import { icons } from "../assets";
+import DoubleAreaChart from "./DoubleAreaChart";
 const RevenueAnalysisCard = ({
   lastYear,
   thisYear,
@@ -13,7 +12,7 @@ const RevenueAnalysisCard = ({
         <span className="text-2xl font-quicksand font-bold">
           Revenue Analysis
         </span>
-        <div className="flex-center gap-4 text-gray-300">
+        {/* <div className="flex-center gap-4 text-gray-300">
           <span className="text-sm flex-center gap-2 hover:text-black">
             <div className="rounded-full h-3 w-3" />
             {lastYear}
@@ -24,12 +23,12 @@ const RevenueAnalysisCard = ({
             {thisYear}
             <TinyIcon icon={icons.downArrow} />
           </span>
-        </div>
+        </div> */}
       </div>
-      <img
-        // className="absolute bottom-0 right-0"
-        src={icons.logo.icon}
-        alt={icons.logo.label}
+      <DoubleAreaChart
+        label={"Revenue Analysis"}
+        lastYear={lastYear}
+        thisYear={thisYear}
       />
     </article>
   );

@@ -10,6 +10,7 @@ import QuickTransfers from "../components/QuickTransfers";
 import Goals from "../components/Goals";
 import MyCards from "../components/MyCards";
 import { INet } from "../interface";
+import AreaChart from "../components/AreaChart";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
                   amount={net.amount}
                   percentage={net.percentage}
                   increase={net.increase}
+                  chart={<AreaChart label={net.label} />}
                 />
               </div>
             ))}
