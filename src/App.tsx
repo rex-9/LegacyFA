@@ -15,9 +15,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // select html elem
     const html = document.querySelector("html");
-    //add or remove class dark in html elem according to theme in localstorage.
+    //set dark or light theme
     if (localStorage.getItem("theme") === "dark") {
       html?.classList.add("dark");
       setTheme("dark");
