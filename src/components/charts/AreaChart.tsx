@@ -13,8 +13,8 @@ const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
       toolbar: {
         show: false,
       },
-      offsetX: 2,
-      offsetY: 30,
+      // offsetX: 2,
+      // offsetY: 30,
     },
     stroke: {
       width: 2,
@@ -83,8 +83,8 @@ const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
     <div
       style={{
         position: "absolute",
-        bottom: "0",
-        right: "0",
+        right: "-0.5%",
+        bottom: "-15%",
         borderRadius: "5px",
         height: "100%",
       }}

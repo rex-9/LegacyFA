@@ -15,8 +15,8 @@ const MyCards = () => {
       <div
         className={
           card.type === "VISA"
-            ? "absolute z-10 bg-gradient-to-br from-blue-400 via-blue-600 to-pink-500 text-white flex flex-col justify-between rounded-xl px-4 py-2 w-[85%] h-[80%]"
-            : "absolute -z-0 bottom-4 right-0 bg-gradient-to-br from-pink-400 via-red-400 to-red-600 text-white flex flex-col justify-between rounded-xl px-4 py-2 w-[85%] h-[80%]"
+            ? "absolute z-10 bg-gradient-to-br from-blue-400 via-blue-600 to-pink-500 text-white flex flex-col justify-between rounded-xl px-4 py-2 w-[85%] h-[100%]"
+            : "absolute -z-0 bottom-4 right-0 bg-gradient-to-br from-pink-400 via-red-400 to-red-600 text-white flex flex-col justify-between rounded-xl px-4 py-2 w-[85%] h-[100%]"
         }
       >
         <div className="flex justify-between items-center">
@@ -66,13 +66,13 @@ const MyCards = () => {
   };
 
   return (
-    <article className="h-1/3 w-[90%] p-4 rounded-lg dark-card">
+    <article className="h-1/3 w-[90%] flex flex-col justify-between p-4 rounded-lg dark-card">
       <Heading
         header={"My Cards"}
         action={"add card"}
         icon={theme === "light" ? icons.downArrowB : icons.downArrowW}
       />
-      <div className="mt-2 relative h-44">
+      <div className="mt-2 relative h-2/3">
         <Card card={visa} />
         <Card card={master} />
       </div>

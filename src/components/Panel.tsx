@@ -65,7 +65,7 @@ const Panel = ({
 
   return (
     <div className="w-[15%] text-center h-full relative dark-panel">
-      <div className="text-2xl font-bold flex-center gap-4 py-6 font-quicksand dark-text-white">
+      <div className="text-2xl font-bold flex-center gap-4 py-6 font-quicksand dark-text-white h-[10%]">
         <PrefixIcon icon={icons.logo} size={"48"} /> Wallet
       </div>
       <NavBtn
