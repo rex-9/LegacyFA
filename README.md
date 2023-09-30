@@ -66,14 +66,14 @@
 </details>
 
 <details>
-  <summary>Server (Planning)</summary>
+  <summary>Server (Plan)</summary>
   <ul>
     <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>Database (Plan)</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
