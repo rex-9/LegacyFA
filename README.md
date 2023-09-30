@@ -197,7 +197,7 @@ To run stylelint tests, run the following command:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Htet Naing (Rex)**
 
 - GitHub: [@rex-9](https://github.com/rex-9)
 - Bento: [@rex9](https://bento.me/rex9)
@@ -207,7 +207,7 @@ To run stylelint tests, run the following command:
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
 
@@ -215,7 +215,7 @@ To run stylelint tests, run the following command:
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 
@@ -249,7 +249,7 @@ I would like to thank [LegacyFA](https://www.legacyfa-asia.com/) for this wonder
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -261,7 +261,7 @@ I would like to thank [LegacyFA](https://www.legacyfa-asia.com/) for this wonder
 
   - [Answer_2]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
