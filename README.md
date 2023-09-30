@@ -8,7 +8,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Legacy-FA-Dashboard (Screen Size: 1920x1080) ](#-legacy-fa-dashboard-screen-size-1920x1080-)
   - [Pull Request](#pull-request)
   - [Screenshots ](#screenshots-)
@@ -33,7 +33,7 @@
 
 # 📖 Legacy-FA-Dashboard (Screen Size: 1920x1080) <a name="about-project"></a>
 
-**Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills.
+**Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills. I developed the project with 1920 x 1080 screen size.
 
 ## [Pull Request](https://github.com/rex-9/LegacyFA/pull/1)
 
