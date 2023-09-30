@@ -3,8 +3,9 @@ import { Heading } from "../../helpers";
 import ColumnChart from "./../charts/ColumnChart";
 import { useContext } from "react";
 import { ThemeContext } from "../../App";
+import { IFinance } from "../../interface";
 
-const FinancialAnalysisCard = () => {
+const FinancialAnalysisCard = ({ finance }: { finance: IFinance }) => {
   const theme = useContext(ThemeContext);
   return (
     <article className="relative dark-card h-72 w-1/3 p-4 rounded-lg">
@@ -25,7 +26,7 @@ const FinancialAnalysisCard = () => {
           <TinyIcon icon={icons.downArrow} />
         </span>
       </div> */}
-      <ColumnChart expense="Expense" income="Income" />
+      <ColumnChart finance={finance} />
     </article>
   );
 };

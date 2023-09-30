@@ -8,6 +8,7 @@ export interface INet {
   amount: number;
   percentage: number;
   increase: boolean;
+  data: number[];
 }
 
 export interface IRevenue {
@@ -18,6 +19,11 @@ export interface IRevenue {
 export interface IExpense {
   field: string;
   amount: number;
+}
+
+export interface IFinance {
+  income: number[];
+  expense: number[];
 }
 
 export interface ITransaction {

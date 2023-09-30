@@ -1,13 +1,8 @@
 import Chart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
+import { IFinance } from "../../interface";
 
-const ColumnChart = ({
-  expense,
-  income,
-}: {
-  expense: string;
-  income: string;
-}) => {
+const ColumnChart = ({ finance }: { finance: IFinance }) => {
   const options: ApexOptions = {
     colors: ["#1A56DB", "#FDBA8C"],
     chart: {
@@ -111,7 +106,7 @@ const ColumnChart = ({
           },
           label: {
             borderWidth: 0,
-            text: expense.toString(),
+            text: "Expenses",
             textAnchor: "start",
             offsetX: 15,
             offsetY: 14,
@@ -144,7 +139,7 @@ const ColumnChart = ({
           },
           label: {
             borderWidth: 0,
-            text: income.toString(),
+            text: "Income",
             textAnchor: "start",
             offsetX: 15,
             offsetY: 14,
@@ -172,12 +167,12 @@ const ColumnChart = ({
     {
       name: "Expenses",
       color: "#EC61CB",
-      data: [3310, 3220, 3300, 2210, 2220, 1230, 3110],
+      data: finance.expense,
     },
     {
       name: "Income",
       color: "#8C76FF",
-      data: [2310, 1220, 630, 3210, 1220, 3230, 1110],
+      data: finance.income,
     },
   ];
 

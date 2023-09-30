@@ -1,6 +1,7 @@
 import {
   ICard,
   IExpense,
+  IFinance,
   IGoal,
   INet,
   IRevenue,
@@ -21,18 +22,21 @@ const nets: INet[] = [
     amount: 6558.67,
     percentage: 16,
     increase: true,
+    data: [0, 2418, 6456, 5555, 6526, 4356, 6558.67],
   },
   {
     label: "Expenses",
     amount: 1420.05,
     percentage: 36,
     increase: false,
+    data: [100, 2418, 1456, 3555, 6526, 4356, 1420.05],
   },
   {
     label: "Investment",
     amount: 950.35,
     percentage: 12,
     increase: true,
+    data: [0, 2418, 6456, 3555, 2526, 4356, 950.35],
   },
 ];
 
@@ -77,6 +81,11 @@ const expenses: IExpense[] = [
     amount: 93.04,
   },
 ];
+
+const finance: IFinance = {
+  income: [2310, 1220, 630, 3210, 1220, 3230, 1110],
+  expense: [3310, 3220, 3300, 2210, 2220, 1230, 3110],
+};
 
 const transactions: ITransaction[] = [
   {
@@ -191,6 +200,7 @@ export {
   nets,
   revenues,
   expenses,
+  finance,
   transactions,
   stocks,
   cards,

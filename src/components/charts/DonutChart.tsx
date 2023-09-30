@@ -2,21 +2,18 @@ import { ApexOptions } from "apexcharts";
 import Chart from "react-apexcharts";
 import { useContext } from "react";
 import { ThemeContext } from "../../App";
+import { IExpense } from "../../interface";
 
-const DonutChart = () => {
+const DonutChart = ({ expenses }: { expenses: IExpense[] }) => {
   const theme = useContext(ThemeContext);
+  const fields = expenses.map((expense) => expense.field);
+  const amounts = expenses.map((expense) => expense.amount);
+
   const options: ApexOptions = {
     chart: {
       type: "donut",
     },
-    labels: [
-      "Supermarkets",
-      "Transfers",
-      "Restaurants",
-      "Cash",
-      "Study",
-      "Others",
-    ],
+    labels: fields,
     colors: ["#5168FE", "#5ECAFF", "#9D5DFF", "#EA60FE", "#EB54B1", "#392C6B"],
     plotOptions: {
       pie: {
@@ -53,7 +50,7 @@ const DonutChart = () => {
     },
   };
 
-  const series = [186.65, 207.82, 197.25, 340, 500.85, 93.04];
+  const series = amounts;
 
   return (
     <div className="w-[83%]">

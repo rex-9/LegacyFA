@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Chart from "react-apexcharts";
 import { ThemeContext } from "../../App";
 
-const AreaChart = ({ label }: { label: string }) => {
+const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
   const theme = useContext(ThemeContext);
 
   const options = {
@@ -73,7 +73,7 @@ const AreaChart = ({ label }: { label: string }) => {
   const series = [
     {
       name: label,
-      data: [0, 2418, 6456, 5555, 6526, 4356, 6558.67],
+      data: data,
       color: "#1A56DB",
     },
   ];

@@ -5,7 +5,14 @@ import FinancialAnalysisCard from "../components/analysis/FinancialAnalysisCard"
 import ExpensesAnalysisCard from "../components/analysis/ExpensesAnalysisCard";
 import InvestmentAnalysisCard from "../components/analysis/InvestmentAnalysisCard";
 import TransactionsAnalysisCard from "../components/analysis/TransactionsAnalysisCard";
-import { expenses, nets, revenues, stocks, transactions } from "../data";
+import {
+  expenses,
+  finance,
+  nets,
+  revenues,
+  stocks,
+  transactions,
+} from "../data";
 import QuickTransfers from "../components/QuickTransfers";
 import Goals from "../components/Goals";
 import MyCards from "../components/MyCards";
@@ -26,14 +33,14 @@ const Home = () => {
                   amount={net.amount}
                   percentage={net.percentage}
                   increase={net.increase}
-                  chart={<AreaChart label={net.label} />}
+                  chart={<AreaChart label={net.label} data={net.data} />}
                 />
               </div>
             ))}
           </div>
           <div className="flex-center mx-4 gap-4">
             <RevenueAnalysisCard revenues={revenues} />
-            <FinancialAnalysisCard />
+            <FinancialAnalysisCard finance={finance} />
           </div>
           <div className="flex-center mx-4 gap-4">
             <ExpensesAnalysisCard expenses={expenses} />
