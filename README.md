@@ -39,7 +39,9 @@
 
 - Click [HERE](https://drive.google.com/file/d/1SLUdlyzRBvoKv63vYlCwLDKHPUH2_RZb/view?usp=sharing) to view the project presentation
 
-## [Pull Request](https://github.com/rex-9/LegacyFA/pull/1)
+## Pull Request
+
+- Click [HERE](https://github.com/rex-9/LegacyFA/pull/1) to view the project Pull Request.
 
 ## Screenshots <a name="screenshots"></a>
 
