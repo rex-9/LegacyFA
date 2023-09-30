@@ -17,7 +17,7 @@ const DonutChart = ({ expenses }: { expenses: IExpense[] }) => {
     colors: ["#5168FE", "#5ECAFF", "#9D5DFF", "#EA60FE", "#EB54B1", "#392C6B"],
     plotOptions: {
       pie: {
-        customScale: 0.7,
+        customScale: 1,
         donut: {
           size: "85%",
           labels: {
@@ -54,7 +54,7 @@ const DonutChart = ({ expenses }: { expenses: IExpense[] }) => {
 
   return (
     <div className="w-[83%]">
-      <Chart options={options} series={series} type="donut" />
+      <Chart options={options} series={series} type="donut" height={"150%"} />
     </div>
   );
 };

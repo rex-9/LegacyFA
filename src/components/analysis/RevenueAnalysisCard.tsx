@@ -2,7 +2,7 @@ import { IRevenue } from "../../interface";
 import DoubleAreaChart from "./../charts/DoubleAreaChart";
 const RevenueAnalysisCard = ({ revenues }: { revenues: IRevenue[] }) => {
   return (
-    <article className="relative dark-card h-72 w-2/3 p-4 rounded-lg">
+    <article className="relative dark-card h-full w-2/3 p-4 rounded-lg">
       <div className="flex-center w-full !justify-between mb-4">
         <span className="text-2xl font-quicksand font-bold">
           Revenue Analysis

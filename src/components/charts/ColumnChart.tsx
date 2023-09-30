@@ -7,7 +7,7 @@ const ColumnChart = ({ finance }: { finance: IFinance }) => {
     colors: ["#1A56DB", "#FDBA8C"],
     chart: {
       type: "bar",
-      height: "320px",
+      height: "100%",
       fontFamily: "Inter, sans-serif",
       toolbar: {
         show: false,
@@ -187,7 +187,7 @@ const ColumnChart = ({ finance }: { finance: IFinance }) => {
         padding: "15px 25px",
       }}
     >
-      <Chart options={options} series={series} type="bar" />
+      <Chart options={options} series={series} type="bar" height={"100%"} />
     </div>
   );
 };

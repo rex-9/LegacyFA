@@ -23,11 +23,11 @@ const Home = () => {
   return (
     <div className="w-[85%] dark-gray">
       <Nav />
-      <section className="flex-center !items-start h-full">
-        <div className="w-3/4 h-full flex flex-col justify-between pl-4 pb-28 pt-4">
-          <div className="flex-center mx-4 gap-4">
+      <section className="flex-center h-[90%]">
+        <div className="w-3/4 h-full flex flex-col gap-8 justify-start pl-4 py-4">
+          <div className="flex-center h-2/5 mx-4 gap-4">
             {nets.map((net: INet) => (
-              <div key={net.label} className="w-1/3">
+              <div key={net.label} className="w-1/3 h-full">
                 <NetAnalysisCard
                   label={net.label}
                   amount={net.amount}
@@ -38,7 +38,7 @@ const Home = () => {
               </div>
             ))}
           </div>
-          <div className="flex-center mx-4 gap-4">
+          <div className="flex-center h-2/3 mx-4 gap-4">
             <RevenueAnalysisCard revenues={revenues} />
             <FinancialAnalysisCard finance={finance} />
           </div>
@@ -50,7 +50,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/4 flex flex-col justify-start items-start gap-4 h-full pb-28 pt-4">
+        <div className="w-1/4 flex flex-col justify-start items-start gap-4 h-full py-4">
           <MyCards />
           <QuickTransfers />
           <Goals />

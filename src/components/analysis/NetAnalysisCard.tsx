@@ -20,7 +20,7 @@ const NetAnalysisCard = ({
   const theme = useContext(ThemeContext);
   const [integerPart, decimalPart] = amount.toString().split(".");
   return (
-    <article className="relative dark-card h-48 p-0 px-4 rounded-lg flex-center flex-col !items-start !justify-around">
+    <article className="relative dark-card h-full px-4 rounded-lg flex-center flex-col !items-start !justify-around">
       <Heading
         header={label}
         action={"this month"}

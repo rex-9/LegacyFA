@@ -1,18 +1,20 @@
 import { useContext } from "react";
 import Chart from "react-apexcharts";
 import { ThemeContext } from "../../App";
+import { ApexOptions } from "apexcharts";
 
 const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
   const theme = useContext(ThemeContext);
 
-  const options = {
+  const options: ApexOptions = {
     chart: {
       id: "area-chart",
       height: "100%",
-      maxWidth: "100%",
       toolbar: {
         show: false,
       },
+      offsetX: 2,
+      offsetY: 30,
     },
     stroke: {
       width: 2,
@@ -26,7 +28,6 @@ const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
         opacityFrom: 0.7,
         opacityTo: 0.9,
         stops: [0, 100],
-        gradientTo: "right",
         colorStops: [
           {
             offset: 0,
@@ -82,8 +83,10 @@ const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
     <div
       style={{
         position: "absolute",
-        bottom: "-15%",
+        bottom: "0",
         right: "0",
+        borderRadius: "5px",
+        height: "100%",
       }}
     >
       <Chart options={options} series={series} type="area" />

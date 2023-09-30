@@ -13,7 +13,7 @@ const Nav = () => {
     );
   };
   return (
-    <nav className="sticky top-0 text-2xl font-bold flex-center !justify-between gap-4 py-6 px-8 font-quicksand">
+    <nav className="sticky top-0 text-2xl font-bold flex-center !justify-between gap-4 py-6 px-8 font-quicksand h-[10%]">
       <div>Dashboard</div>
       <div className="flex-center gap-8 font-mooli">
         <form>
