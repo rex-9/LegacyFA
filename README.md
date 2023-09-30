@@ -64,7 +64,7 @@ For more information on the importance of a professional README for your reposit
 
 > Describe your project in 1 or 2 sentences.
 
-**legacy-fa-dashboard** is an assignment given to me by LegacyFA to display my frontend skills.
+**Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills.
 
 ## [Pull Request](https://github.com/rex-9/LegacyFA/pull/1)
 
