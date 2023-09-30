@@ -33,7 +33,7 @@
 
 # 📖 Legacy-FA-Dashboard (Screen Size: 1920x1080) <a name="about-project"></a>
 
-**Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills. I developed the project with 1920 x 1080 screen size.
+**Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills. I developed the project with 1920 x 1080 screen size. Please kindly make sure that chrome zoom percentage is set to 100%.
 
 ## Presentation
 
