@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Legacy-FA-Dashboard (Screen Size: 1920x1080) ](#-legacy-fa-dashboard-screen-size-1920x1080-)
+- [📖 Legacy-FA-Dashboard ](#-legacy-fa-dashboard-screen-size-1920x1080-)
   - [Pull Request](#pull-request)
   - [Screenshots ](#screenshots-)
   - [🛠 Built With ](#-built-with-)
@@ -31,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Legacy-FA-Dashboard (Screen Size: 1920x1080) <a name="about-project"></a>
+# 📖 Legacy-FA-Dashboard <a name="about-project"></a>
 
 **Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills.
 
