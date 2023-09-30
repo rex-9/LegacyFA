@@ -84,7 +84,8 @@ const AreaChart = ({ label, data }: { label: string; data: number[] }) => {
       style={{
         position: "absolute",
         right: "-0.5%",
-        bottom: "-15%",
+        // bottom: "-15%",
+        bottom: "2%",
         borderRadius: "5px",
         height: "100%",
       }}
