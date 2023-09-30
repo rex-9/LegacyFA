@@ -9,6 +9,8 @@ const MyCards = () => {
   const theme = useContext(ThemeContext);
   const visa = cards[0];
   const master = cards[1];
+
+  // Visa or MasterCard Layout
   const Card = ({ card }: { card: ICard }) => {
     const [integerPart, decimalPart] = card.balance.toString().split(".");
     return (
