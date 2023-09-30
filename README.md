@@ -35,6 +35,10 @@
 
 **Legacy-FA-Dashboard** is an assignment given to me by [LegacyFA](https://www.legacyfa-asia.com/) to display my frontend skills. I developed the project with 1920 x 1080 screen size.
 
+## Presentation
+
+- Click [HERE](https://drive.google.com/file/d/1SLUdlyzRBvoKv63vYlCwLDKHPUH2_RZb/view?usp=sharing) to view the project presentation
+
 ## [Pull Request](https://github.com/rex-9/LegacyFA/pull/1)
 
 ## Screenshots <a name="screenshots"></a>
