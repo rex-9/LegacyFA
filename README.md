@@ -42,6 +42,7 @@ For more information on the importance of a professional README for your reposit
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [ERD Diagram](#erd-diagram)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -122,6 +123,13 @@ For more information on the importance of a professional README for your reposit
 - [Live Demo Link](https://legacy-fa-dashboard.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ERD Diagram (simplified) <a name="erd-diagram"></a>
+
+- Postgres Database
+  ![ERD Diagram](./src/assets/images/db.png)
+
+- [Visit Diagram](https://drawsql.app/teams/rex9/diagrams/legacyfa)
 
 <!-- GETTING STARTED -->
 

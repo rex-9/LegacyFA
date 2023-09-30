@@ -10,7 +10,7 @@ import {
   ITransfer,
 } from "./interface";
 
-// Fetched from the Socal Storage
+// Fetched from the Local Storage
 const currentUser = {
   name: "Michaela",
 };
@@ -118,7 +118,7 @@ const stocks: IStock[] = [
   {
     initials: "AAPL",
     name: "Apple Inc.",
-    price: 3204.05,
+    price: 3204.05, // wanna use socket.io to fetch price of stocks
     amount: 92.59,
     increase: true,
   },
