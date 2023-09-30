@@ -3,15 +3,18 @@ import {
   IExpense,
   IGoal,
   INet,
+  IRevenue,
   IStock,
   ITransaction,
   ITransfer,
 } from "./interface";
 
+// Fetched from the Socal Storage
 const currentUser = {
   name: "Michaela",
 };
 
+// Fetched using API
 const nets: INet[] = [
   {
     label: "Income",
@@ -33,36 +36,45 @@ const nets: INet[] = [
   },
 ];
 
+const revenues: IRevenue[] = [
+  {
+    year: 2021,
+    data: [
+      0, 2418, 6456, 5555, 6526, 4356, 6558.67, 6456, 5555, 6526, 4356, 6558.67,
+    ],
+  },
+  {
+    year: 2022,
+    data: [
+      0, 1418, 5456, 4555, 3526, 6356, 3558.67, 8456, 3555, 4526, 6356, 6558.67,
+    ],
+  },
+];
+
 const expenses: IExpense[] = [
   {
     field: "Supermarkets",
     amount: 186.65,
-    color: "#fff",
   },
   {
     field: "Transfers",
     amount: 207.82,
-    color: "#fff",
   },
   {
     field: "Restaurants",
     amount: 197.25,
-    color: "#fff",
   },
   {
     field: "Cash",
     amount: 340,
-    color: "#fff",
   },
   {
     field: "Study",
     amount: 500.85,
-    color: "#fff",
   },
   {
     field: "Others",
     amount: 93.04,
-    color: "#fff",
   },
 ];
 
@@ -177,6 +189,7 @@ const goals: IGoal[] = [
 export {
   currentUser,
   nets,
+  revenues,
   expenses,
   transactions,
   stocks,

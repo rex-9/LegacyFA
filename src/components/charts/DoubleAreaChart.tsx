@@ -1,14 +1,10 @@
 import Chart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
+import { IRevenue } from "../../interface";
 
-const DoubleAreaChart = ({
-  lastYear,
-  thisYear,
-}: {
-  label: string;
-  lastYear: number;
-  thisYear: number;
-}) => {
+const DoubleAreaChart = ({ revenues }: { revenues: IRevenue[] }) => {
+  const [lastYear, thisYear] = revenues;
+
   const options: ApexOptions = {
     chart: {
       id: "area-chart",
@@ -112,7 +108,7 @@ const DoubleAreaChart = ({
           },
           label: {
             borderWidth: 0,
-            text: lastYear.toString(),
+            text: lastYear.year.toString(),
             textAnchor: "start",
             offsetX: 15,
             offsetY: 14,
@@ -145,7 +141,7 @@ const DoubleAreaChart = ({
           },
           label: {
             borderWidth: 0,
-            text: thisYear.toString(),
+            text: thisYear.year.toString(),
             textAnchor: "start",
             offsetX: 15,
             offsetY: 14,
@@ -171,19 +167,13 @@ const DoubleAreaChart = ({
 
   const series = [
     {
-      name: lastYear.toString(),
-      data: [
-        0, 2418, 6456, 5555, 6526, 4356, 6558.67, 6456, 5555, 6526, 4356,
-        6558.67,
-      ],
+      name: lastYear.year.toString(),
+      data: lastYear.data,
       color: "red",
     },
     {
-      name: thisYear.toString(),
-      data: [
-        0, 1418, 5456, 4555, 3526, 6356, 3558.67, 8456, 3555, 4526, 6356,
-        6558.67,
-      ],
+      name: thisYear.year.toString(),
+      data: thisYear.data,
       color: "lightblue",
     },
   ];

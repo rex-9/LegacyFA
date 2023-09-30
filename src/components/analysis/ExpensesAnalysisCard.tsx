@@ -3,10 +3,9 @@ import { icons } from "../../assets";
 import { Heading } from "../../helpers";
 import DonutChart from "../charts/DonutChart";
 import { useContext } from "react";
-// import { IExpense } from "../../interface";
+import { IExpense } from "../../interface";
 
-// const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
-const ExpensesAnalysisCard = () => {
+const ExpensesAnalysisCard = ({ expenses }: { expenses: IExpense[] }) => {
   const theme = useContext(ThemeContext);
   return (
     <article className="expenses-card w-2/5 h-80 p-4 rounded-lg dark-card">
@@ -16,7 +15,7 @@ const ExpensesAnalysisCard = () => {
         icon={theme === "light" ? icons.downArrowB : icons.downArrowW}
       />
       <div className="relative flex-center !justify-around">
-        <DonutChart />
+        <DonutChart expenses={expenses} />
         {/* <div>
           {expenses.map((expense: IExpense) => (
             <div

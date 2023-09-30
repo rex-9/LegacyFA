@@ -1,11 +1,6 @@
+import { IRevenue } from "../../interface";
 import DoubleAreaChart from "./../charts/DoubleAreaChart";
-const RevenueAnalysisCard = ({
-  lastYear,
-  thisYear,
-}: {
-  lastYear: number;
-  thisYear: number;
-}) => {
+const RevenueAnalysisCard = ({ revenues }: { revenues: IRevenue[] }) => {
   return (
     <article className="relative dark-card h-72 w-2/3 p-4 rounded-lg">
       <div className="flex-center w-full !justify-between mb-4">
@@ -25,11 +20,7 @@ const RevenueAnalysisCard = ({
           </span>
         </div> */}
       </div>
-      <DoubleAreaChart
-        label={"Revenue Analysis"}
-        lastYear={lastYear}
-        thisYear={thisYear}
-      />
+      <DoubleAreaChart revenues={revenues} />
     </article>
   );
 };

@@ -10,10 +10,14 @@ export interface INet {
   increase: boolean;
 }
 
+export interface IRevenue {
+  year: number;
+  data: number[];
+}
+
 export interface IExpense {
   field: string;
   amount: number;
-  color: string;
 }
 
 export interface ITransaction {

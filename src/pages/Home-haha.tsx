@@ -5,7 +5,7 @@ import FinancialAnalysisCard from "../components/analysis/FinancialAnalysisCard"
 import ExpensesAnalysisCard from "../components/analysis/ExpensesAnalysisCard";
 import InvestmentAnalysisCard from "../components/analysis/InvestmentAnalysisCard";
 import TransactionsAnalysisCard from "../components/analysis/TransactionsAnalysisCard";
-import { nets, stocks, transactions } from "../data";
+import { expenses, nets, revenues, stocks, transactions } from "../data";
 import QuickTransfers from "../components/QuickTransfers";
 import Goals from "../components/Goals";
 import MyCards from "../components/MyCards";
@@ -32,12 +32,11 @@ const Home = () => {
             ))}
           </div>
           <div className="flex-center mx-4 gap-4">
-            <RevenueAnalysisCard lastYear={2021} thisYear={2022} />
+            <RevenueAnalysisCard revenues={revenues} />
             <FinancialAnalysisCard />
           </div>
           <div className="flex-center mx-4 gap-4">
-            <ExpensesAnalysisCard />
-            {/* <ExpensesAnalysisCard expenses={expenses} /> */}
+            <ExpensesAnalysisCard expenses={expenses} />
             <div className="w-3/5 flex-center gap-4">
               <TransactionsAnalysisCard transactions={transactions} />
               <InvestmentAnalysisCard stocks={stocks} />
