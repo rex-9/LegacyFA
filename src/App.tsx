@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Home from "./pages/Home";
+import Panel from "./components/Panel";
+import { createContext, useEffect, useState } from "react";
+
+export const ThemeContext = createContext("");
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState("light");
+
+  // if local storage is empty save theme as light
+  useEffect(() => {
+    if (localStorage.getItem("theme") === null) {
+      localStorage.setItem("theme", "light");
+    }
+  }, []);
+
+  useEffect(() => {
+    // select html elem
+    const html = document.querySelector("html");
+    //add or remove class dark in html elem according to theme in localstorage.
+    if (localStorage.getItem("theme") === "dark") {
+      html?.classList.add("dark");
+      setTheme("dark");
+    } else {
+      html?.classList.remove("dark");
+      setTheme("light");
+    }
+  }, [theme]);
+
+  const ThemeProvider = ({ children }: { children: JSX.Element }) => {
+    return (
+      <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+    );
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ThemeProvider>
+        <section className="flex justify-center h-screen overflow-y-hidden overflow-x-hidden font-mooli">
+          <Panel theme={theme} setTheme={setTheme} />
+          <Home />
+        </section>
+      </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
